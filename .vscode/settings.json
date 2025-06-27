@@ -3,5 +3,14 @@
     {
       "mode": "auto"
     }
+  ],
+  "cSpell.words": [
+    "cursorignore",
+    "kubb",
+    "lefthook",
+    "renovatebot",
+    "syncpackrc",
+    "Turbopack",
+    "Turborepo"
   ]
 }
