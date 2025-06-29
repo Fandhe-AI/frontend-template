@@ -14,6 +14,7 @@ node_modules
 
 # Testing
 coverage
+!apps/coverage/
 
 # Turbo
 .turbo
@@ -26,7 +27,7 @@ coverage
 out/
 build
 dist
-
+dependency-graph.*
 
 # Debug
 npm-debug.log*

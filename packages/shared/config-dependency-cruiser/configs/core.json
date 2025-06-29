@@ -1,0 +1,40 @@
+{
+  "forbidden": [
+    {
+      "name": "no-circular",
+      "severity": "error",
+      "comment": "循環依存を禁止",
+      "from": {},
+      "to": {
+        "circular": true
+      }
+    },
+    {
+      "name": "no-orphans",
+      "severity": "warn",
+      "comment": "使用されていないファイルを警告",
+      "from": {
+        "orphan": true,
+        "pathNot": [
+          "(^|/)\\.[^/]+\\.(js|cjs|mjs|ts|json)$",
+          "\\.d\\.ts$",
+          "(^|/)tsconfig\\.json$",
+          "(^|/)package\\.json$",
+          "(^|/)(README|readme)\\.(md|txt)$",
+          "(^|/)\\.(gitignore|npmignore|eslintrc|prettierrc)",
+          "(^|/)turbo\\.json$",
+          "(^|/)next\\.config\\.(js|ts)$",
+          "(^|/)jest\\.config\\.(js|ts)$",
+          "(^|/)vitest\\.config\\.(js|ts)$",
+          "(^|/)playwright\\.config\\.(js|ts)$"
+        ]
+      },
+      "to": {}
+    }
+  ],
+  "options": {
+    "doNotFollow": {
+      "path": "node_modules"
+    }
+  }
+}

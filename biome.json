@@ -1,0 +1,7 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
+  "extends": [
+    "@repo/shared/config-biome/configs/core.json",
+    "@repo/shared/config-biome/configs/root.json"
+  ]
+}

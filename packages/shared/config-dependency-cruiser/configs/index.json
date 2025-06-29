@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "@repo/shared/config-dependency-cruiser/configs/core.json",
+    "@repo/shared/config-dependency-cruiser/configs/typescript.json",
+    "@repo/shared/config-dependency-cruiser/configs/fsd.json"
+  ]
+}

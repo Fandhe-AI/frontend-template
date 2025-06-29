@@ -1,21 +1,43 @@
 {
   "$schema": "https://turborepo.com/schema.json",
   "ui": "tui",
+  "globalDependencies": ["**/.env.*local"],
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": [".next/**", "!.next/cache/**"]
-    },
-    "lint": {
-      "dependsOn": ["^lint"]
-    },
-    "check-types": {
-      "dependsOn": ["^check-types"]
+      "outputs": [
+        ".next/**",
+        "!.next/cache/**",
+        "storybook-static/**",
+        "dist/**"
+      ]
     },
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "lint": {},
+    "lint:fix": {},
+    "format": {},
+    "check:types": {
+      "dependsOn": ["^check:types"]
+    },
+    "check:dep": {
+      "inputs": [
+        "**/*.{ts,tsx,js,jsx}",
+        "package.json",
+        ".dependency-cruiser.js"
+      ],
+      "outputs": []
+    },
+    "check:dep:graph": {
+      "inputs": [
+        "**/*.{ts,tsx,js,jsx}",
+        "package.json",
+        ".dependency-cruiser.js"
+      ],
+      "outputs": ["dependency-graph.*"]
     }
   }
 }

@@ -1,0 +1,8 @@
+{
+  "options": {
+    "tsPreCompilationDeps": true,
+    "tsConfig": {
+      "fileName": "tsconfig.json"
+    }
+  }
+}
