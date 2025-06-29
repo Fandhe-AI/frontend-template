@@ -1,3 +1,7 @@
 packages:
   - "apps/*"
-  - "packages/*"
+  - "packages/pages/*"
+  - "packages/widgets/*"
+  - "packages/features/*"
+  - "packages/entities/*"
+  - "packages/shared/*"

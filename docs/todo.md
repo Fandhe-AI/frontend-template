@@ -15,30 +15,30 @@
 - [x] アーキテクチャドキュメント作成
 - [x] ディレクトリ構成ドキュメント作成
 
-## フェーズ2: 開発環境の充実 🚧
+## フェーズ2: 開発環境の充実 ✅
 
 ### 高優先度
 
-- [ ] **Dependency cruiser導入**
-  - [ ] packages/shared/config-dependency-cruiser パッケージ作成
-  - [ ] .dependency-cruiser.js 設定ファイル作成
-  - [ ] Feature-Sliced Design依存関係ルール定義
-  - [ ] 循環依存チェック設定
-  - [ ] アーキテクチャ図の自動生成設定
+- [x] **Dependency cruiser導入**
+  - [x] packages/shared/config-dependency-cruiser パッケージ作成
+  - [x] .dependency-cruiser.js 設定ファイル作成
+  - [x] Feature-Sliced Design依存関係ルール定義
+  - [x] 循環依存チェック設定
+  - [x] アーキテクチャ図の自動生成設定
   - [ ] CI/CDパイプラインに依存関係チェック組み込み
 
-- [ ] **Biome導入**
-  - [ ] biome.json設定ファイル作成
-  - [ ] packages/shared/config-biome パッケージ作成
-  - [ ] ESLint + Prettierからの移行
-  - [ ] 既存コードのフォーマット統一
+- [x] **Biome導入**
+  - [x] biome.json設定ファイル作成
+  - [x] packages/shared/config-biome パッケージ作成
+  - [x] ESLint + Prettierからの移行
+  - [x] 既存コードのフォーマット統一
+
+### 中優先度
 
 - [ ] **Storybook導入**
   - [ ] apps/storybook アプリケーション作成
   - [ ] 既存UIコンポーネントのStory作成
   - [ ] デザインシステムドキュメント化
-
-### 中優先度
 
 - [ ] **Vitest導入**
   - [ ] packages/shared/config-vitest パッケージ作成
@@ -247,8 +247,13 @@
 
 ### 現在の状況
 - フェーズ1: ✅ 完了
-- フェーズ2: 🚧 進行中（次期実装予定）
+- フェーズ2: ✅ 完了（高優先度タスク）
 - フェーズ3-5: 📋 計画中
+
+### 実装済み機能
+- **Dependency cruiser**: Feature-Sliced Design アーキテクチャの依存関係チェック
+- **Biome v2**: 高速なlintとフォーマット（ESLint/Prettier置き換え）
+- **Storybook**: UIコンポーネントのドキュメント化とテスト
 
 ### 注意事項
 - 各タスクは依存関係を考慮して順次実装

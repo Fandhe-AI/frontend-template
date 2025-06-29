@@ -68,7 +68,7 @@
   - データモデル、ビジネスルール、API呼び出し
 
 - **shared**: 汎用的なUI、ユーティリティ、設定など
-  - 現在: `packages/ui/`, `packages/eslint-config/`, `packages/typescript-config/` で部分実装
+  - 現在: `packages/ui/`, `packages/typescript-config/` で部分実装
   - 将来: API関連、設定、ユーティリティなどを追加予定
 
 ### 依存関係ルール
@@ -120,7 +120,6 @@ app → pages → widgets → features → entities → shared
 - **web/**: Next.jsを使用したメインWebアプリケーション
 
 ### packages/ (shared層 + 設定)
-- **eslint-config/**: ESLint設定の共有
 - **typescript-config/**: TypeScript設定の共有  
 - **ui/**: 共通UIコンポーネント
 

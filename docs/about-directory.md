@@ -1,74 +1,45 @@
 # ディレクトリについて
 
-## 現在の構成
-
-このプロジェクトは **Feature-Sliced Design** に基づいたモノレポ構成を目指しており、現在は基本的な構造から段階的に拡張していく予定です。
-
-```shell
-frontend-template/
-├── .vscode/              # VSCode設定
-├── apps/                 # アプリケーション層
-│   ├── docs/            # ドキュメント生成アプリ
-│   └── web/             # メインWebアプリケーション
-├── packages/            # 共有パッケージ
-│   ├── eslint-config/   # ESLint設定パッケージ
-│   ├── typescript-config/ # TypeScript設定パッケージ
-│   └── ui/              # 共通UIコンポーネント
-├── docs/                # プロジェクトドキュメント
-│   ├── about-architecture.md  # アーキテクチャ説明
-│   └── about-directory.md     # ディレクトリ構成説明
-├── .gitignore           # Git無視ファイル設定
-├── .npmrc               # npm設定
-├── package.json         # ルートパッケージ設定
-├── pnpm-lock.yaml       # 依存関係ロック
-├── pnpm-workspace.yaml  # ワークスペース設定
-├── README.md            # プロジェクトREADME
-└── turbo.json           # Turboタスク設定
-```
-
 ## Feature-Sliced Design 導入計画
 
 将来的には以下の構成への移行を計画しています：
 
 ```shell
 frontend-template/
-├── .cursor/             # Cursor設定（将来追加予定）
-├── .github/             # GitHub設定（将来追加予定）
-├── .vscode/             # VSCode設定
-├── apps/                # Feature-Sliced Design: app層
-│   ├── coverage/        # テストカバレッジ集約（将来追加予定）
-│   ├── docs/           # ドキュメント生成アプリ
-│   ├── mock/           # モックサーバー（将来追加予定）
-│   ├── storybook/      # UI Component ドキュメント（将来追加予定）
-│   ├── sample-react-router/ # React Router サンプル（将来追加予定）
-│   ├── sample-nextjs/  # Next.js サンプル（将来追加予定）
-│   └── web/            # メインWebアプリケーション
+├── .cursor/            # Cursor設定（将来追加予定）
+├── .github/            # GitHub設定（将来追加予定）
+├── .vscode/            # VSCode設定
+├── apps/               # Feature-Sliced Design: app層
+│ ├── coverage/         # テストカバレッジ集約（将来追加予定）
+│ ├── docs/             # ドキュメント生成アプリ
+│ ├── mock/             # モックサーバー（将来追加予定）
+│ ├── sample-react-router/ # React Router サンプル（将来追加予定）
+│ ├── sample-nextjs/    # Next.js サンプル（将来追加予定）
+│ └── storybook/        # UI Component ドキュメント（将来追加予定）
 ├── packages/           # Feature-Sliced Design: 各層
-│   ├── pages/          # FSD: pages層（将来追加予定）
-│   ├── widgets/        # FSD: widgets層（将来追加予定）
-│   ├── features/       # FSD: features層（将来追加予定）
-│   ├── entities/       # FSD: entities層（将来追加予定）
-│   ├── shared/         # FSD: shared層（将来拡張予定）
-│   │   ├── api-client/     # API クライアント（将来追加予定）
-│   │   ├── api-mock/       # API モック（将来追加予定）
-│   │   ├── api-spec/       # OpenAPI 仕様（将来追加予定）
-│   │   ├── api-type/       # API 型定義（将来追加予定）
-│   │   ├── api-zod/        # API Zod スキーマ（将来追加予定）
-│   │   ├── config-biome/   # Biome設定（将来追加予定）
-│   │   ├── config-kubb/    # Kubb設定（将来追加予定）
-│   │   ├── config-playwright/ # Playwright設定（将来追加予定）
-│   │   ├── config-tailwind/   # Tailwind設定（将来追加予定）
-│   │   ├── config-typescript/ # TypeScript設定
-│   │   ├── config-vitest/     # Vitest設定（将来追加予定）
-│   │   ├── config/         # 各種設定（将来追加予定）
-│   │   ├── hooks/          # カスタムフック（将来追加予定）
-│   │   ├── lib-dayjs/      # Day.js設定（将来追加予定）
-│   │   ├── lib/            # ライブラリ（将来追加予定）
-│   │   ├── locales/        # 国際化（将来追加予定）
-│   │   ├── ui/             # 共通UIコンポーネント
-│   │   └── utils/          # ユーティリティ（将来追加予定）
-│   ├── eslint-config/  # ESLint設定パッケージ
-│   └── typescript-config/ # TypeScript設定パッケージ
+│ ├── pages/            # FSD: pages層（将来追加予定）
+│ ├── widgets/          # FSD: widgets層（将来追加予定）
+│ ├── features/         # FSD: features層（将来追加予定）
+│ ├── entities/         # FSD: entities層（将来追加予定）
+│ └── shared/           # FSD: shared層（将来拡張予定）
+│   ├── api-client/     # API クライアント（将来追加予定）
+│   ├── api-mock/       # API モック（将来追加予定）
+│   ├── api-spec/       # OpenAPI 仕様（将来追加予定）
+│   ├── api-type/       # API 型定義（将来追加予定）
+│   ├── api-zod/        # API Zod スキーマ（将来追加予定）
+│   ├── config-biome/   # Biome設定（将来追加予定）
+│   ├── config-kubb/    # Kubb設定（将来追加予定）
+│   ├── config-playwright/ # Playwright設定（将来追加予定）
+│   ├── config-tailwind/   # Tailwind設定（将来追加予定）
+│   ├── config-typescript/ # TypeScript設定
+│   ├── config-vitest/     # Vitest設定（将来追加予定）
+│   ├── config/         # 各種設定（将来追加予定）
+│   ├── hooks/          # カスタムフック（将来追加予定）
+│   ├── lib-dayjs/      # Day.js設定（将来追加予定）
+│   ├── lib/            # ライブラリ（将来追加予定）
+│   ├── locales/        # 国際化（将来追加予定）
+│   ├── ui/             # 共通UIコンポーネント
+│   └── utils/          # ユーティリティ（将来追加予定）
 ├── turbo/              # Turbo設定（将来追加予定）
 ├── docs/               # プロジェクトドキュメント
 ├── .cursorignore       # Cursor無視設定（将来追加予定）
@@ -160,12 +131,6 @@ apps/
 
 ```shell
 packages/
-├── eslint-config/      # ESLint設定の共有
-│   ├── base.js        # 基本設定
-│   ├── next.js        # Next.js用設定
-│   ├── react-internal.js # React内部用設定
-│   ├── package.json   # パッケージ設定
-│   └── README.md      # 設定ドキュメント
 ├── typescript-config/ # TypeScript設定の共有
 │   ├── base.json      # 基本設定
 │   ├── nextjs.json    # Next.js用設定
@@ -184,14 +149,6 @@ packages/
     ├── tsconfig.json  # TypeScript設定
     └── eslint.config.mjs # ESLint設定
 ```
-
-#### packages/eslint-config/ (shared層)
-- **目的**: ESLint設定の統一と共有
-- **現在の構成要素**:
-  - `base.js`: 基本的なESLintルール
-  - `next.js`: Next.js固有のルール
-  - `react-internal.js`: React内部開発用ルール
-- **使用方法**: 他のパッケージで `@repo/eslint-config` として参照
 
 #### packages/typescript-config/ (shared層)
 - **目的**: TypeScript設定の統一と共有
@@ -252,7 +209,7 @@ Feature-Sliced Design への移行は5つのフェーズに分けて段階的に
 ## ディレクトリ命名規則
 
 ### パッケージ命名
-- **kebab-case** を使用（例: `eslint-config`）
+- **kebab-case** を使用（例: `config-biome`）
 - 機能を明確に表現する名前
 - 接頭辞による分類（例: `config-*`, `api-*`）
 
