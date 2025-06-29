@@ -24,9 +24,13 @@
           "(^|/)\\.(gitignore|npmignore|eslintrc|prettierrc)",
           "(^|/)turbo\\.json$",
           "(^|/)next\\.config\\.(js|ts)$",
+          "(^|/).next",
           "(^|/)jest\\.config\\.(js|ts)$",
           "(^|/)vitest\\.config\\.(js|ts)$",
-          "(^|/)playwright\\.config\\.(js|ts)$"
+          "(^|/)playwright\\.config\\.(js|ts)$",
+
+          "^apps/sample-nextjs/postcss.config.ts$",
+          "^apps/sample-react-router/src/routes/.+\\.tsx$"
         ]
       },
       "to": {}
@@ -35,6 +39,10 @@
   "options": {
     "doNotFollow": {
       "path": "node_modules"
+    },
+    "exclude": {
+      "path": "(coverage|test|node_modules|dist|build|.next|.react-router)",
+      "dynamic": true
     }
   }
 }

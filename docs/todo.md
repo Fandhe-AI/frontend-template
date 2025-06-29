@@ -35,6 +35,14 @@
 
 ### 中優先度
 
+- [x] **Nextjs導入**
+  - [x] apps/sample-nextjs アプリケーション作成
+
+- [x] **React Router導入**
+  - [x] apps/sample-react-router アプリケーション作成
+
+### 低優先度
+
 - [ ] **Storybook導入**
   - [ ] apps/storybook アプリケーション作成
   - [ ] 既存UIコンポーネントのStory作成
@@ -50,8 +58,6 @@
   - [ ] packages/shared/config-playwright パッケージ作成
   - [ ] E2Eテスト環境構築
   - [ ] 基本的なユーザーフローテスト
-
-### 低優先度
 
 - [ ] **開発環境改善**
   - [ ] .editorconfig追加
