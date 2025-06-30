@@ -1,0 +1,27 @@
+{
+  "name": "@repo/shared/api-client",
+  "version": "0.0.0",
+  "private": true,
+  "description": "API client for the project",
+  "exports": {
+    ".": "./src/clients/index.ts"
+  },
+  "scripts": {
+    "generate": "kubb generate",
+    "check:types": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@kubb/cli": "^3.12.1",
+    "@kubb/core": "^3.12.1",
+    "@kubb/plugin-client": "^3.12.1",
+    "@kubb/plugin-oas": "^3.12.1",
+    "@kubb/plugin-ts": "^3.12.1",
+    "@kubb/plugin-zod": "^3.12.1",
+    "@repo/shared/api-spec": "workspace:*",
+    "@repo/shared/config-kubb": "workspace:*",
+    "@repo/shared/config-typescript": "workspace:*"
+  },
+  "dependencies": {
+    "zod": "^3.25.67"
+  }
+}

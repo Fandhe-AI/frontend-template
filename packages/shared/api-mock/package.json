@@ -1,0 +1,27 @@
+{
+	"name": "@repo/shared/api-mock",
+	"version": "0.0.0",
+	"private": true,
+	"description": "API mock for the project",
+	"exports": {
+		".": "./src/handlers/index.ts"
+	},
+	"scripts": {
+		"generate": "kubb generate",
+		"check:types": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@faker-js/faker": "^9.8.0",
+		"@kubb/cli": "^3.12.1",
+		"@kubb/core": "^3.12.1",
+		"@kubb/plugin-faker": "^3.12.1",
+		"@kubb/plugin-msw": "^3.12.1",
+		"@kubb/plugin-oas": "^3.12.1",
+		"@kubb/plugin-ts": "^3.12.1",
+		"@repo/shared/api-spec": "workspace:*",
+		"@repo/shared/config-biome": "workspace:*",
+		"@repo/shared/config-kubb": "workspace:*",
+		"@repo/shared/config-typescript": "workspace:*",
+		"msw": "^2.10.2"
+	}
+}

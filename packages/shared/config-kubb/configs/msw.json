@@ -1,0 +1,5 @@
+{
+  "handlers": true,
+  "group": { "type": "tag" },
+  "parser": "faker"
+}

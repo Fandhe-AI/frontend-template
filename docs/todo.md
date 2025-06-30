@@ -60,7 +60,7 @@
   - [ ] 基本的なユーザーフローテスト
 
 - [ ] **開発環境改善**
-  - [ ] .editorconfig追加
+  - [x] .editorconfig追加
   - [ ] .env.example作成
   - [ ] apps/coverage カバレッジ集約アプリ作成
 
@@ -116,16 +116,17 @@
 
 ### OpenAPI・型安全性
 
-- [ ] **API仕様設計**
-  - [ ] packages/shared/api-spec ディレクトリ作成
-  - [ ] OpenAPI 3.0仕様書作成
-  - [ ] API エンドポイント設計
+- [x] **API仕様設計**
+  - [x] packages/shared/api-spec ディレクトリ作成
+  - [x] OpenAPI 3.0仕様書作成
+  - [x] API エンドポイント設計
 
-- [ ] **Kubb導入**
-  - [ ] packages/shared/config-kubb パッケージ作成
-  - [ ] packages/shared/api-client 自動生成設定
-  - [ ] packages/shared/api-type 自動生成設定
-  - [ ] packages/shared/api-zod 自動生成設定
+- [x] **Kubb導入**
+  - [x] packages/shared/config-kubb パッケージ作成
+  - [x] packages/shared/api-client 自動生成設定
+  - [x] packages/shared/api-type 自動生成設定
+  - [x] packages/shared/api-zod 自動生成設定
+  - [x] packages/shared/api-mock 自動生成設定
 
 ### モック・開発環境
 
