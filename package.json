@@ -1,6 +1,7 @@
 {
   "name": "frontend-template",
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "turbo run build",
     "build:no-storybook": "turbo run build --filter=!storybook",
@@ -19,14 +20,20 @@
     "format": "biome format --write .",
     "check:types": "turbo run check:types",
     "check:dep": "depcruise --config .dependency-cruiser.js .",
-    "check:dep:svg": "depcruise --config .dependency-cruiser.js . --output-type dot | dot -T svg > dependency-graph.svg"
+    "check:dep:svg": "depcruise --config .dependency-cruiser.js . --output-type dot | dot -T svg > dependency-graph.svg",
+    "commit": "commit"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.0.6",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/prompt-cli": "^19.8.1",
+    "@commitlint/types": "^19.8.1",
     "@repo/shared-config-biome": "workspace:*",
+    "@repo/shared-config-commitlint": "workspace:*",
     "@repo/shared-config-dependency-cruiser": "workspace:*",
     "@repo/shared-config-typescript": "workspace:*",
     "dependency-cruiser": "^16.10.3",
+    "lefthook": "^1.11.14",
     "turbo": "^2.5.4"
   },
   "packageManager": "pnpm@10.12.4",

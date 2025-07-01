@@ -1,0 +1,14 @@
+{
+  "name": "@repo/shared-config-commitlint",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Commitlint configuration for the project",
+  "type": "module",
+  "exports": {
+    "./configs/*": "./configs/*.js"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/types": "^19.8.1"
+  }
+}
