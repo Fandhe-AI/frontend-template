@@ -1,2 +1,2 @@
-export { getCategories } from "./getCategories.ts";
-export { postCategories } from "./postCategories.ts";
+export { getCategories } from "./getCategories";
+export { postCategories } from "./postCategories";

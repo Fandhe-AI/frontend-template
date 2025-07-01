@@ -61,7 +61,7 @@
 
 - [ ] **開発環境改善**
   - [x] .editorconfig追加
-  - [ ] .env.example作成
+  - [x] .env.example作成
   - [ ] apps/coverage カバレッジ集約アプリ作成
 
 - [ ] **エディタ設定充実**
@@ -130,17 +130,10 @@
 
 ### モック・開発環境
 
-- [ ] **モックサーバー**
-  - [ ] apps/mock アプリケーション作成
-  - [ ] packages/shared/api-mock 自動生成設定
-  - [ ] 開発用ダミーデータ作成
-
-### 状態管理
-
-- [ ] **状態管理ライブラリ導入**
-  - [ ] Zustand or TanStack Query選定
-  - [ ] グローバル状態設計
-  - [ ] サーバー状態管理
+- [x] **モックサーバー**
+  - [x] apps/mock アプリケーション作成
+  - [x] packages/shared/api-mock 自動生成設定
+  - [x] 開発用ダミーデータ作成
 
 ## フェーズ5: 品質・運用強化 ⚙️
 

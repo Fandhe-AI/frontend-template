@@ -1,5 +1,5 @@
 {
-  "name": "@repo/shared/api-type",
+  "name": "@repo/shared-api-type",
   "version": "0.0.0",
   "private": true,
   "description": "API type for the project",
@@ -15,8 +15,8 @@
     "@kubb/core": "^3.12.1",
     "@kubb/plugin-oas": "^3.12.1",
     "@kubb/plugin-ts": "^3.12.1",
-    "@repo/shared/api-spec": "workspace:*",
-    "@repo/shared/config-kubb": "workspace:*",
-    "@repo/shared/config-typescript": "workspace:*"
+    "@repo/shared-api-spec": "workspace:*",
+    "@repo/shared-config-kubb": "workspace:*",
+    "@repo/shared-config-typescript": "workspace:*"
   }
 }

@@ -22,7 +22,7 @@ Biome v2.0.6の新機能を活用した、各workspace用に最適化されたBi
 ```json
 {
   "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
-  "extends": ["@repo/shared/config-biome/configs/react-library"]
+  "extends": ["@repo/shared-config-biome/configs/react-library"]
 }
 ```
 
@@ -30,7 +30,7 @@ Biome v2.0.6の新機能を活用した、各workspace用に最適化されたBi
 ```json
 {
   "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
-  "extends": ["@repo/shared/config-biome/configs/nextjs"]
+  "extends": ["@repo/shared-config-biome/configs/nextjs"]
 }
 ```
 
@@ -38,7 +38,7 @@ Biome v2.0.6の新機能を活用した、各workspace用に最適化されたBi
 ```json
 {
   "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
-  "extends": ["@repo/shared/config-biome/configs/react-router"]
+  "extends": ["@repo/shared-config-biome/configs/react-router"]
 }
 ```
 
@@ -46,7 +46,7 @@ Biome v2.0.6の新機能を活用した、各workspace用に最適化されたBi
 ```json
 {
   "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
-  "extends": ["@repo/shared/config-biome/configs/storybook"]
+  "extends": ["@repo/shared-config-biome/configs/storybook"]
 }
 ```
 
@@ -54,7 +54,7 @@ Biome v2.0.6の新機能を活用した、各workspace用に最適化されたBi
 ```json
 {
   "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
-  "extends": ["@repo/shared/config-biome/configs/config-only"]
+  "extends": ["@repo/shared-config-biome/configs/config-only"]
 }
 ```
 
@@ -99,7 +99,7 @@ pnpm biome check src/button.tsx --verbose
 ```json
 {
   "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
-  "extends": ["@repo/shared/config-biome/configs/nextjs"],
+  "extends": ["@repo/shared-config-biome/configs/nextjs"],
   "linter": {
     "rules": {
       "nursery": {

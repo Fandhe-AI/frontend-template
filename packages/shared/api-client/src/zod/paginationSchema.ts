@@ -5,7 +5,7 @@
 
 import type { ToZod } from "@kubb/plugin-zod/utils";
 import { z } from "zod";
-import type { Pagination } from "../types/Pagination.ts";
+import type { Pagination } from "../types/Pagination";
 
 /**
  * @description ページネーション情報

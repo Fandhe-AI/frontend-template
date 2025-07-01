@@ -3,8 +3,8 @@
  * Do not edit manually.
  */
 
-import { createCustomError } from "./createCustomError.ts";
+import { createCustomError } from "./createCustomError";
 
 export function createUnauthorized() {
-	return createCustomError();
+  return createCustomError();
 }

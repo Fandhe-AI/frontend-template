@@ -14,11 +14,11 @@ import type {
   PostAuthRefresh500,
   PostAuthRefreshMutationRequest,
   PostAuthRefreshMutationResponse,
-} from "../../types/authController/PostAuthRefresh.ts";
+} from "../../types/authController/PostAuthRefresh";
 import {
   postAuthRefreshMutationRequestSchema,
   postAuthRefreshMutationResponseSchema,
-} from "../../zod/authController/postAuthRefreshSchema.ts";
+} from "../../zod/authController/postAuthRefreshSchema";
 
 function getPostAuthRefreshUrl() {
   return `/auth/refresh` as const;

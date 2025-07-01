@@ -2,6 +2,9 @@
   "root": ".",
   "output": {
     "path": "./src",
-    "clean": true
+    "clean": true,
+    "extension": {
+      ".ts": ""
+    }
   }
 }

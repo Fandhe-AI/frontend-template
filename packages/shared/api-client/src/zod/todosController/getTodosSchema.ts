@@ -12,10 +12,7 @@ import type {
   GetTodos500,
   GetTodosQueryParams,
   GetTodosQueryResponse,
-} from "../../types/todosController/GetTodos.ts";
-import { customErrorSchema } from "../customErrorSchema.ts";
-import { paginationSchema } from "../paginationSchema.ts";
-import { todoSchema } from "../todoSchema.ts";
+} from "../../types/todosController/GetTodos";
 
 export const getTodosQueryParamsSchema = z.object({
   status: z
@@ -53,30 +50,104 @@ export const getTodosQueryParamsSchema = z.object({
  */
 export const getTodos200Schema = z.object({
   data: z.array(
-    z.lazy(() => todoSchema).describe("Todo アイテムを表現するオブジェクト"),
+    z
+      .object({
+        id: z.string().describe("Todo の一意識別子"),
+        title: z.string().min(1).max(200).describe("Todo のタイトル（必須）"),
+        description: z
+          .string()
+          .max(1000)
+          .describe("Todo の詳細説明（任意）")
+          .nullable()
+          .nullish(),
+        status: z.enum(["pending", "completed"]).describe("Todo の完了状態"),
+        priority: z.enum(["low", "medium", "high"]).describe("Todo の優先度"),
+        category_id: z
+          .string()
+          .describe("関連するカテゴリの ID（任意）")
+          .nullable()
+          .nullish(),
+        due_date: z
+          .date()
+          .describe("期限日時（ISO 8601形式、任意）")
+          .nullable()
+          .nullish(),
+        created_at: z.date().describe("作成日時（ISO 8601形式）"),
+        updated_at: z.date().describe("最終更新日時（ISO 8601形式）"),
+      })
+      .describe("Todo アイテムを表現するオブジェクト"),
   ),
-  pagination: z.lazy(() => paginationSchema).describe("ページネーション情報"),
+  pagination: z
+    .object({
+      page: z.number().int().min(1).describe("現在のページ番号"),
+      limit: z.number().int().min(1).describe("1ページあたりの件数"),
+      total: z.number().int().min(0).describe("総件数"),
+      total_pages: z.number().int().min(0).describe("総ページ数"),
+    })
+    .describe("ページネーション情報"),
 }) as unknown as ToZod<GetTodos200>;
 
 /**
  * @description リクエストが不正です
  */
 export const getTodos400Schema = z
-  .lazy(() => customErrorSchema)
+  .object({
+    error: z.object({
+      code: z.string().describe("エラーコード"),
+      message: z.string().describe("エラーメッセージ"),
+      details: z
+        .array(
+          z.object({
+            field: z.string().describe("エラーが発生したフィールド名"),
+            message: z.string().describe("フィールド固有のエラーメッセージ"),
+          }),
+        )
+        .describe("詳細なエラー情報（バリデーションエラー時など）")
+        .optional(),
+    }),
+  })
   .describe("エラー情報") as unknown as ToZod<GetTodos400>;
 
 /**
  * @description 認証が必要です
  */
 export const getTodos401Schema = z
-  .lazy(() => customErrorSchema)
+  .object({
+    error: z.object({
+      code: z.string().describe("エラーコード"),
+      message: z.string().describe("エラーメッセージ"),
+      details: z
+        .array(
+          z.object({
+            field: z.string().describe("エラーが発生したフィールド名"),
+            message: z.string().describe("フィールド固有のエラーメッセージ"),
+          }),
+        )
+        .describe("詳細なエラー情報（バリデーションエラー時など）")
+        .optional(),
+    }),
+  })
   .describe("エラー情報") as unknown as ToZod<GetTodos401>;
 
 /**
  * @description サーバー内部エラー
  */
 export const getTodos500Schema = z
-  .lazy(() => customErrorSchema)
+  .object({
+    error: z.object({
+      code: z.string().describe("エラーコード"),
+      message: z.string().describe("エラーメッセージ"),
+      details: z
+        .array(
+          z.object({
+            field: z.string().describe("エラーが発生したフィールド名"),
+            message: z.string().describe("フィールド固有のエラーメッセージ"),
+          }),
+        )
+        .describe("詳細なエラー情報（バリデーションエラー時など）")
+        .optional(),
+    }),
+  })
   .describe("エラー情報") as unknown as ToZod<GetTodos500>;
 
 export const getTodosQueryResponseSchema = z.lazy(

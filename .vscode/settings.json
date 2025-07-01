@@ -8,11 +8,13 @@
     "cursorignore",
     "depcruise",
     "Instantiator",
+    "isbot",
     "kubb",
     "lefthook",
     "Nonoctal",
     "renovatebot",
     "syncpackrc",
+    "Todoid",
     "Turbopack",
     "Turborepo"
   ]

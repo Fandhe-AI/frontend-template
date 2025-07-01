@@ -1,5 +1,6 @@
 {
-  "extends": "@repo/shared/config-typescript/configs/react-library.json",
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@repo/shared-config-typescript/configs/react-library",
   "compilerOptions": {
     "outDir": "dist"
   },

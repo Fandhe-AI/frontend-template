@@ -14,8 +14,8 @@ import type {
   PatchTodosTodoidToggle500,
   PatchTodosTodoidToggleMutationResponse,
   PatchTodosTodoidTogglePathParams,
-} from "../../types/todosController/PatchTodosTodoidToggle.ts";
-import { patchTodosTodoidToggleMutationResponseSchema } from "../../zod/todosController/patchTodosTodoidToggleSchema.ts";
+} from "../../types/todosController/PatchTodosTodoidToggle";
+import { patchTodosTodoidToggleMutationResponseSchema } from "../../zod/todosController/patchTodosTodoidToggleSchema";
 
 function getPatchTodosTodoidToggleUrl(
   todoId: PatchTodosTodoidTogglePathParams["todoId"],

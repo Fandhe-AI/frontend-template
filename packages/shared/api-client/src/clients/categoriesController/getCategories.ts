@@ -12,8 +12,8 @@ import type {
   GetCategories401,
   GetCategories500,
   GetCategoriesQueryResponse,
-} from "../../types/categoriesController/GetCategories.ts";
-import { getCategoriesQueryResponseSchema } from "../../zod/categoriesController/getCategoriesSchema.ts";
+} from "../../types/categoriesController/GetCategories";
+import { getCategoriesQueryResponseSchema } from "../../zod/categoriesController/getCategoriesSchema";
 
 function getGetCategoriesUrl() {
   return `/categories` as const;

@@ -1,4 +1,4 @@
-export type { AuthResponse } from "./types/AuthResponse.ts";
+export type { AuthResponse } from "./types/AuthResponse";
 export type {
   PostAuthLogin200,
   PostAuthLogin400,
@@ -7,7 +7,7 @@ export type {
   PostAuthLoginMutation,
   PostAuthLoginMutationRequest,
   PostAuthLoginMutationResponse,
-} from "./types/authController/PostAuthLogin.ts";
+} from "./types/authController/PostAuthLogin";
 export type {
   PostAuthRefresh200,
   PostAuthRefresh400,
@@ -16,23 +16,24 @@ export type {
   PostAuthRefreshMutation,
   PostAuthRefreshMutationRequest,
   PostAuthRefreshMutationResponse,
-} from "./types/authController/PostAuthRefresh.ts";
-export type { BadRequest } from "./types/BadRequest.ts";
-export type { Category } from "./types/Category.ts";
-export type { CreateCategoryRequest } from "./types/CreateCategoryRequest.ts";
+} from "./types/authController/PostAuthRefresh";
+export type { BadRequest } from "./types/BadRequest";
+export type { Category } from "./types/Category";
+export type { CreateCategoryRequest } from "./types/CreateCategoryRequest";
 export type {
   CreateTodoRequest,
   CreateTodoRequestPriorityEnum,
-} from "./types/CreateTodoRequest.ts";
-export { createTodoRequestPriorityEnum } from "./types/CreateTodoRequest.ts";
-export type { CustomError } from "./types/CustomError.ts";
+} from "./types/CreateTodoRequest";
+export { createTodoRequestPriorityEnum } from "./types/CreateTodoRequest";
+export type { CustomError } from "./types/CustomError";
+export type { CustomSuccess } from "./types/CustomSuccess";
 export type {
   GetCategories200,
   GetCategories401,
   GetCategories500,
   GetCategoriesQuery,
   GetCategoriesQueryResponse,
-} from "./types/categoriesController/GetCategories.ts";
+} from "./types/categoriesController/GetCategories";
 export type {
   PostCategories201,
   PostCategories400,
@@ -42,13 +43,13 @@ export type {
   PostCategoriesMutation,
   PostCategoriesMutationRequest,
   PostCategoriesMutationResponse,
-} from "./types/categoriesController/PostCategories.ts";
-export type { InternalServerError } from "./types/InternalServerError.ts";
-export type { LoginRequest } from "./types/LoginRequest.ts";
-export type { NotFound } from "./types/NotFound.ts";
-export type { Pagination } from "./types/Pagination.ts";
-export type { Todo, TodoPriorityEnum, TodoStatusEnum } from "./types/Todo.ts";
-export { todoPriorityEnum, todoStatusEnum } from "./types/Todo.ts";
+} from "./types/categoriesController/PostCategories";
+export type { InternalServerError } from "./types/InternalServerError";
+export type { LoginRequest } from "./types/LoginRequest";
+export type { NotFound } from "./types/NotFound";
+export type { Pagination } from "./types/Pagination";
+export type { Todo, TodoPriorityEnum, TodoStatusEnum } from "./types/Todo";
+export { todoPriorityEnum, todoStatusEnum } from "./types/Todo";
 export type {
   DeleteTodosTodoid204,
   DeleteTodosTodoid401,
@@ -57,8 +58,10 @@ export type {
   DeleteTodosTodoidMutation,
   DeleteTodosTodoidMutationResponse,
   DeleteTodosTodoidPathParams,
-} from "./types/todosController/DeleteTodosTodoid.ts";
+} from "./types/todosController/DeleteTodosTodoid";
 export type {
+  DataPriorityEnum,
+  DataStatusEnum,
   GetTodos200,
   GetTodos400,
   GetTodos401,
@@ -70,43 +73,67 @@ export type {
   GetTodosQueryParamsSortEnum,
   GetTodosQueryParamsStatusEnum,
   GetTodosQueryResponse,
-} from "./types/todosController/GetTodos.ts";
+} from "./types/todosController/GetTodos";
 export {
+  dataPriorityEnum,
+  dataStatusEnum,
   getTodosQueryParamsOrderEnum,
   getTodosQueryParamsPriorityEnum,
   getTodosQueryParamsSortEnum,
   getTodosQueryParamsStatusEnum,
-} from "./types/todosController/GetTodos.ts";
+} from "./types/todosController/GetTodos";
 export type {
   GetTodosTodoid200,
+  GetTodosTodoid200PriorityEnum,
+  GetTodosTodoid200StatusEnum,
   GetTodosTodoid401,
   GetTodosTodoid404,
   GetTodosTodoid500,
   GetTodosTodoidPathParams,
   GetTodosTodoidQuery,
   GetTodosTodoidQueryResponse,
-} from "./types/todosController/GetTodosTodoid.ts";
+} from "./types/todosController/GetTodosTodoid";
+export {
+  getTodosTodoid200PriorityEnum,
+  getTodosTodoid200StatusEnum,
+} from "./types/todosController/GetTodosTodoid";
 export type {
   PatchTodosTodoidToggle200,
+  PatchTodosTodoidToggle200PriorityEnum,
+  PatchTodosTodoidToggle200StatusEnum,
   PatchTodosTodoidToggle401,
   PatchTodosTodoidToggle404,
   PatchTodosTodoidToggle500,
   PatchTodosTodoidToggleMutation,
   PatchTodosTodoidToggleMutationResponse,
   PatchTodosTodoidTogglePathParams,
-} from "./types/todosController/PatchTodosTodoidToggle.ts";
+} from "./types/todosController/PatchTodosTodoidToggle";
+export {
+  patchTodosTodoidToggle200PriorityEnum,
+  patchTodosTodoidToggle200StatusEnum,
+} from "./types/todosController/PatchTodosTodoidToggle";
 export type {
   PostTodos201,
+  PostTodos201PriorityEnum,
+  PostTodos201StatusEnum,
   PostTodos400,
   PostTodos401,
   PostTodos422,
   PostTodos500,
   PostTodosMutation,
   PostTodosMutationRequest,
+  PostTodosMutationRequestPriorityEnum,
   PostTodosMutationResponse,
-} from "./types/todosController/PostTodos.ts";
+} from "./types/todosController/PostTodos";
+export {
+  postTodos201PriorityEnum,
+  postTodos201StatusEnum,
+  postTodosMutationRequestPriorityEnum,
+} from "./types/todosController/PostTodos";
 export type {
   PutTodosTodoid200,
+  PutTodosTodoid200PriorityEnum,
+  PutTodosTodoid200StatusEnum,
   PutTodosTodoid400,
   PutTodosTodoid401,
   PutTodosTodoid404,
@@ -114,21 +141,29 @@ export type {
   PutTodosTodoid500,
   PutTodosTodoidMutation,
   PutTodosTodoidMutationRequest,
+  PutTodosTodoidMutationRequestPriorityEnum,
+  PutTodosTodoidMutationRequestStatusEnum,
   PutTodosTodoidMutationResponse,
   PutTodosTodoidPathParams,
-} from "./types/todosController/PutTodosTodoid.ts";
-export type { Unauthorized } from "./types/Unauthorized.ts";
+} from "./types/todosController/PutTodosTodoid";
+export {
+  putTodosTodoid200PriorityEnum,
+  putTodosTodoid200StatusEnum,
+  putTodosTodoidMutationRequestPriorityEnum,
+  putTodosTodoidMutationRequestStatusEnum,
+} from "./types/todosController/PutTodosTodoid";
+export type { Unauthorized } from "./types/Unauthorized";
 export type {
   UpdateTodoRequest,
   UpdateTodoRequestPriorityEnum,
   UpdateTodoRequestStatusEnum,
-} from "./types/UpdateTodoRequest.ts";
+} from "./types/UpdateTodoRequest";
 export {
   updateTodoRequestPriorityEnum,
   updateTodoRequestStatusEnum,
-} from "./types/UpdateTodoRequest.ts";
-export type { User } from "./types/User.ts";
-export type { ValidationError } from "./types/ValidationError.ts";
+} from "./types/UpdateTodoRequest";
+export type { User } from "./types/User";
+export type { ValidationError } from "./types/ValidationError";
 export {
   postAuthLogin200Schema,
   postAuthLogin400Schema,
@@ -136,7 +171,7 @@ export {
   postAuthLogin500Schema,
   postAuthLoginMutationRequestSchema,
   postAuthLoginMutationResponseSchema,
-} from "./zod/authController/postAuthLoginSchema.ts";
+} from "./zod/authController/postAuthLoginSchema";
 export {
   postAuthRefresh200Schema,
   postAuthRefresh400Schema,
@@ -144,15 +179,15 @@ export {
   postAuthRefresh500Schema,
   postAuthRefreshMutationRequestSchema,
   postAuthRefreshMutationResponseSchema,
-} from "./zod/authController/postAuthRefreshSchema.ts";
-export { authResponseSchema } from "./zod/authResponseSchema.ts";
-export { badRequestSchema } from "./zod/badRequestSchema.ts";
+} from "./zod/authController/postAuthRefreshSchema";
+export { authResponseSchema } from "./zod/authResponseSchema";
+export { badRequestSchema } from "./zod/badRequestSchema";
 export {
   getCategories200Schema,
   getCategories401Schema,
   getCategories500Schema,
   getCategoriesQueryResponseSchema,
-} from "./zod/categoriesController/getCategoriesSchema.ts";
+} from "./zod/categoriesController/getCategoriesSchema";
 export {
   postCategories201Schema,
   postCategories400Schema,
@@ -161,16 +196,17 @@ export {
   postCategories500Schema,
   postCategoriesMutationRequestSchema,
   postCategoriesMutationResponseSchema,
-} from "./zod/categoriesController/postCategoriesSchema.ts";
-export { categorySchema } from "./zod/categorySchema.ts";
-export { createCategoryRequestSchema } from "./zod/createCategoryRequestSchema.ts";
-export { createTodoRequestSchema } from "./zod/createTodoRequestSchema.ts";
-export { customErrorSchema } from "./zod/customErrorSchema.ts";
-export { internalServerErrorSchema } from "./zod/internalServerErrorSchema.ts";
-export { loginRequestSchema } from "./zod/loginRequestSchema.ts";
-export { notFoundSchema } from "./zod/notFoundSchema.ts";
-export { paginationSchema } from "./zod/paginationSchema.ts";
-export { todoSchema } from "./zod/todoSchema.ts";
+} from "./zod/categoriesController/postCategoriesSchema";
+export { categorySchema } from "./zod/categorySchema";
+export { createCategoryRequestSchema } from "./zod/createCategoryRequestSchema";
+export { createTodoRequestSchema } from "./zod/createTodoRequestSchema";
+export { customErrorSchema } from "./zod/customErrorSchema";
+export { customSuccessSchema } from "./zod/customSuccessSchema";
+export { internalServerErrorSchema } from "./zod/internalServerErrorSchema";
+export { loginRequestSchema } from "./zod/loginRequestSchema";
+export { notFoundSchema } from "./zod/notFoundSchema";
+export { paginationSchema } from "./zod/paginationSchema";
+export { todoSchema } from "./zod/todoSchema";
 export {
   deleteTodosTodoid204Schema,
   deleteTodosTodoid401Schema,
@@ -178,7 +214,7 @@ export {
   deleteTodosTodoid500Schema,
   deleteTodosTodoidMutationResponseSchema,
   deleteTodosTodoidPathParamsSchema,
-} from "./zod/todosController/deleteTodosTodoidSchema.ts";
+} from "./zod/todosController/deleteTodosTodoidSchema";
 export {
   getTodos200Schema,
   getTodos400Schema,
@@ -186,7 +222,7 @@ export {
   getTodos500Schema,
   getTodosQueryParamsSchema,
   getTodosQueryResponseSchema,
-} from "./zod/todosController/getTodosSchema.ts";
+} from "./zod/todosController/getTodosSchema";
 export {
   getTodosTodoid200Schema,
   getTodosTodoid401Schema,
@@ -194,7 +230,7 @@ export {
   getTodosTodoid500Schema,
   getTodosTodoidPathParamsSchema,
   getTodosTodoidQueryResponseSchema,
-} from "./zod/todosController/getTodosTodoidSchema.ts";
+} from "./zod/todosController/getTodosTodoidSchema";
 export {
   patchTodosTodoidToggle200Schema,
   patchTodosTodoidToggle401Schema,
@@ -202,7 +238,7 @@ export {
   patchTodosTodoidToggle500Schema,
   patchTodosTodoidToggleMutationResponseSchema,
   patchTodosTodoidTogglePathParamsSchema,
-} from "./zod/todosController/patchTodosTodoidToggleSchema.ts";
+} from "./zod/todosController/patchTodosTodoidToggleSchema";
 export {
   postTodos201Schema,
   postTodos400Schema,
@@ -211,7 +247,7 @@ export {
   postTodos500Schema,
   postTodosMutationRequestSchema,
   postTodosMutationResponseSchema,
-} from "./zod/todosController/postTodosSchema.ts";
+} from "./zod/todosController/postTodosSchema";
 export {
   putTodosTodoid200Schema,
   putTodosTodoid400Schema,
@@ -222,8 +258,8 @@ export {
   putTodosTodoidMutationRequestSchema,
   putTodosTodoidMutationResponseSchema,
   putTodosTodoidPathParamsSchema,
-} from "./zod/todosController/putTodosTodoidSchema.ts";
-export { unauthorizedSchema } from "./zod/unauthorizedSchema.ts";
-export { updateTodoRequestSchema } from "./zod/updateTodoRequestSchema.ts";
-export { userSchema } from "./zod/userSchema.ts";
-export { validationErrorSchema } from "./zod/validationErrorSchema.ts";
+} from "./zod/todosController/putTodosTodoidSchema";
+export { unauthorizedSchema } from "./zod/unauthorizedSchema";
+export { updateTodoRequestSchema } from "./zod/updateTodoRequestSchema";
+export { userSchema } from "./zod/userSchema";
+export { validationErrorSchema } from "./zod/validationErrorSchema";

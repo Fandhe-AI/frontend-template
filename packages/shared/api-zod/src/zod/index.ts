@@ -5,7 +5,7 @@ export {
   postAuthLogin500Schema,
   postAuthLoginMutationRequestSchema,
   postAuthLoginMutationResponseSchema,
-} from "./authController/postAuthLoginSchema.ts";
+} from "./authController/postAuthLoginSchema";
 export {
   postAuthRefresh200Schema,
   postAuthRefresh400Schema,
@@ -13,15 +13,15 @@ export {
   postAuthRefresh500Schema,
   postAuthRefreshMutationRequestSchema,
   postAuthRefreshMutationResponseSchema,
-} from "./authController/postAuthRefreshSchema.ts";
-export { authResponseSchema } from "./authResponseSchema.ts";
-export { badRequestSchema } from "./badRequestSchema.ts";
+} from "./authController/postAuthRefreshSchema";
+export { authResponseSchema } from "./authResponseSchema";
+export { badRequestSchema } from "./badRequestSchema";
 export {
   getCategories200Schema,
   getCategories401Schema,
   getCategories500Schema,
   getCategoriesQueryResponseSchema,
-} from "./categoriesController/getCategoriesSchema.ts";
+} from "./categoriesController/getCategoriesSchema";
 export {
   postCategories201Schema,
   postCategories400Schema,
@@ -30,16 +30,17 @@ export {
   postCategories500Schema,
   postCategoriesMutationRequestSchema,
   postCategoriesMutationResponseSchema,
-} from "./categoriesController/postCategoriesSchema.ts";
-export { categorySchema } from "./categorySchema.ts";
-export { createCategoryRequestSchema } from "./createCategoryRequestSchema.ts";
-export { createTodoRequestSchema } from "./createTodoRequestSchema.ts";
-export { customErrorSchema } from "./customErrorSchema.ts";
-export { internalServerErrorSchema } from "./internalServerErrorSchema.ts";
-export { loginRequestSchema } from "./loginRequestSchema.ts";
-export { notFoundSchema } from "./notFoundSchema.ts";
-export { paginationSchema } from "./paginationSchema.ts";
-export { todoSchema } from "./todoSchema.ts";
+} from "./categoriesController/postCategoriesSchema";
+export { categorySchema } from "./categorySchema";
+export { createCategoryRequestSchema } from "./createCategoryRequestSchema";
+export { createTodoRequestSchema } from "./createTodoRequestSchema";
+export { customErrorSchema } from "./customErrorSchema";
+export { customSuccessSchema } from "./customSuccessSchema";
+export { internalServerErrorSchema } from "./internalServerErrorSchema";
+export { loginRequestSchema } from "./loginRequestSchema";
+export { notFoundSchema } from "./notFoundSchema";
+export { paginationSchema } from "./paginationSchema";
+export { todoSchema } from "./todoSchema";
 export {
   deleteTodosTodoid204Schema,
   deleteTodosTodoid401Schema,
@@ -47,7 +48,7 @@ export {
   deleteTodosTodoid500Schema,
   deleteTodosTodoidMutationResponseSchema,
   deleteTodosTodoidPathParamsSchema,
-} from "./todosController/deleteTodosTodoidSchema.ts";
+} from "./todosController/deleteTodosTodoidSchema";
 export {
   getTodos200Schema,
   getTodos400Schema,
@@ -55,7 +56,7 @@ export {
   getTodos500Schema,
   getTodosQueryParamsSchema,
   getTodosQueryResponseSchema,
-} from "./todosController/getTodosSchema.ts";
+} from "./todosController/getTodosSchema";
 export {
   getTodosTodoid200Schema,
   getTodosTodoid401Schema,
@@ -63,7 +64,7 @@ export {
   getTodosTodoid500Schema,
   getTodosTodoidPathParamsSchema,
   getTodosTodoidQueryResponseSchema,
-} from "./todosController/getTodosTodoidSchema.ts";
+} from "./todosController/getTodosTodoidSchema";
 export {
   patchTodosTodoidToggle200Schema,
   patchTodosTodoidToggle401Schema,
@@ -71,7 +72,7 @@ export {
   patchTodosTodoidToggle500Schema,
   patchTodosTodoidToggleMutationResponseSchema,
   patchTodosTodoidTogglePathParamsSchema,
-} from "./todosController/patchTodosTodoidToggleSchema.ts";
+} from "./todosController/patchTodosTodoidToggleSchema";
 export {
   postTodos201Schema,
   postTodos400Schema,
@@ -80,7 +81,7 @@ export {
   postTodos500Schema,
   postTodosMutationRequestSchema,
   postTodosMutationResponseSchema,
-} from "./todosController/postTodosSchema.ts";
+} from "./todosController/postTodosSchema";
 export {
   putTodosTodoid200Schema,
   putTodosTodoid400Schema,
@@ -91,8 +92,8 @@ export {
   putTodosTodoidMutationRequestSchema,
   putTodosTodoidMutationResponseSchema,
   putTodosTodoidPathParamsSchema,
-} from "./todosController/putTodosTodoidSchema.ts";
-export { unauthorizedSchema } from "./unauthorizedSchema.ts";
-export { updateTodoRequestSchema } from "./updateTodoRequestSchema.ts";
-export { userSchema } from "./userSchema.ts";
-export { validationErrorSchema } from "./validationErrorSchema.ts";
+} from "./todosController/putTodosTodoidSchema";
+export { unauthorizedSchema } from "./unauthorizedSchema";
+export { updateTodoRequestSchema } from "./updateTodoRequestSchema";
+export { userSchema } from "./userSchema";
+export { validationErrorSchema } from "./validationErrorSchema";

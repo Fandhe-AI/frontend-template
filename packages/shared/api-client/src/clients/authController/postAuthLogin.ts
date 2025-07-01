@@ -14,11 +14,11 @@ import type {
   PostAuthLogin500,
   PostAuthLoginMutationRequest,
   PostAuthLoginMutationResponse,
-} from "../../types/authController/PostAuthLogin.ts";
+} from "../../types/authController/PostAuthLogin";
 import {
   postAuthLoginMutationRequestSchema,
   postAuthLoginMutationResponseSchema,
-} from "../../zod/authController/postAuthLoginSchema.ts";
+} from "../../zod/authController/postAuthLoginSchema";
 
 function getPostAuthLoginUrl() {
   return `/auth/login` as const;

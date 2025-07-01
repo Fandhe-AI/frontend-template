@@ -5,8 +5,8 @@
 
 import type { ToZod } from "@kubb/plugin-zod/utils";
 import { z } from "zod";
-import type { AuthResponse } from "../types/AuthResponse.ts";
-import { userSchema } from "./userSchema.ts";
+import type { AuthResponse } from "../types/AuthResponse";
+import { userSchema } from "./userSchema";
 
 /**
  * @description 認証成功時のレスポンス

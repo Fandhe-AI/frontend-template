@@ -5,7 +5,7 @@
 
 import type { ToZod } from "@kubb/plugin-zod/utils";
 import { z } from "zod";
-import type { CreateTodoRequest } from "../types/CreateTodoRequest.ts";
+import type { CreateTodoRequest } from "../types/CreateTodoRequest";
 
 /**
  * @description Todo 作成時のリクエストボディ

@@ -14,8 +14,8 @@ import type {
   DeleteTodosTodoid500,
   DeleteTodosTodoidMutationResponse,
   DeleteTodosTodoidPathParams,
-} from "../../types/todosController/DeleteTodosTodoid.ts";
-import { deleteTodosTodoidMutationResponseSchema } from "../../zod/todosController/deleteTodosTodoidSchema.ts";
+} from "../../types/todosController/DeleteTodosTodoid";
+import { deleteTodosTodoidMutationResponseSchema } from "../../zod/todosController/deleteTodosTodoidSchema";
 
 function getDeleteTodosTodoidUrl(
   todoId: DeleteTodosTodoidPathParams["todoId"],

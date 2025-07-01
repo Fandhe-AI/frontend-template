@@ -15,11 +15,11 @@ import type {
   PostCategories500,
   PostCategoriesMutationRequest,
   PostCategoriesMutationResponse,
-} from "../../types/categoriesController/PostCategories.ts";
+} from "../../types/categoriesController/PostCategories";
 import {
   postCategoriesMutationRequestSchema,
   postCategoriesMutationResponseSchema,
-} from "../../zod/categoriesController/postCategoriesSchema.ts";
+} from "../../zod/categoriesController/postCategoriesSchema";
 
 function getPostCategoriesUrl() {
   return `/categories` as const;

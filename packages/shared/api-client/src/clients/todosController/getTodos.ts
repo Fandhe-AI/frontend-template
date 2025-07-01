@@ -14,8 +14,8 @@ import type {
   GetTodos500,
   GetTodosQueryParams,
   GetTodosQueryResponse,
-} from "../../types/todosController/GetTodos.ts";
-import { getTodosQueryResponseSchema } from "../../zod/todosController/getTodosSchema.ts";
+} from "../../types/todosController/GetTodos";
+import { getTodosQueryResponseSchema } from "../../zod/todosController/getTodosSchema";
 
 function getGetTodosUrl() {
   return `/todos` as const;

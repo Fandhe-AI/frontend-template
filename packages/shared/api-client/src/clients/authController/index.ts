@@ -1,2 +1,2 @@
-export { postAuthLogin } from "./postAuthLogin.ts";
-export { postAuthRefresh } from "./postAuthRefresh.ts";
+export { postAuthLogin } from "./postAuthLogin";
+export { postAuthRefresh } from "./postAuthRefresh";

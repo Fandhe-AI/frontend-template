@@ -6,8 +6,10 @@ export type {
   DeleteTodosTodoidMutation,
   DeleteTodosTodoidMutationResponse,
   DeleteTodosTodoidPathParams,
-} from "./DeleteTodosTodoid.ts";
+} from "./DeleteTodosTodoid";
 export type {
+  DataPriorityEnum,
+  DataStatusEnum,
   GetTodos200,
   GetTodos400,
   GetTodos401,
@@ -19,43 +21,67 @@ export type {
   GetTodosQueryParamsSortEnum,
   GetTodosQueryParamsStatusEnum,
   GetTodosQueryResponse,
-} from "./GetTodos.ts";
+} from "./GetTodos";
 export {
+  dataPriorityEnum,
+  dataStatusEnum,
   getTodosQueryParamsOrderEnum,
   getTodosQueryParamsPriorityEnum,
   getTodosQueryParamsSortEnum,
   getTodosQueryParamsStatusEnum,
-} from "./GetTodos.ts";
+} from "./GetTodos";
 export type {
   GetTodosTodoid200,
+  GetTodosTodoid200PriorityEnum,
+  GetTodosTodoid200StatusEnum,
   GetTodosTodoid401,
   GetTodosTodoid404,
   GetTodosTodoid500,
   GetTodosTodoidPathParams,
   GetTodosTodoidQuery,
   GetTodosTodoidQueryResponse,
-} from "./GetTodosTodoid.ts";
+} from "./GetTodosTodoid";
+export {
+  getTodosTodoid200PriorityEnum,
+  getTodosTodoid200StatusEnum,
+} from "./GetTodosTodoid";
 export type {
   PatchTodosTodoidToggle200,
+  PatchTodosTodoidToggle200PriorityEnum,
+  PatchTodosTodoidToggle200StatusEnum,
   PatchTodosTodoidToggle401,
   PatchTodosTodoidToggle404,
   PatchTodosTodoidToggle500,
   PatchTodosTodoidToggleMutation,
   PatchTodosTodoidToggleMutationResponse,
   PatchTodosTodoidTogglePathParams,
-} from "./PatchTodosTodoidToggle.ts";
+} from "./PatchTodosTodoidToggle";
+export {
+  patchTodosTodoidToggle200PriorityEnum,
+  patchTodosTodoidToggle200StatusEnum,
+} from "./PatchTodosTodoidToggle";
 export type {
   PostTodos201,
+  PostTodos201PriorityEnum,
+  PostTodos201StatusEnum,
   PostTodos400,
   PostTodos401,
   PostTodos422,
   PostTodos500,
   PostTodosMutation,
   PostTodosMutationRequest,
+  PostTodosMutationRequestPriorityEnum,
   PostTodosMutationResponse,
-} from "./PostTodos.ts";
+} from "./PostTodos";
+export {
+  postTodos201PriorityEnum,
+  postTodos201StatusEnum,
+  postTodosMutationRequestPriorityEnum,
+} from "./PostTodos";
 export type {
   PutTodosTodoid200,
+  PutTodosTodoid200PriorityEnum,
+  PutTodosTodoid200StatusEnum,
   PutTodosTodoid400,
   PutTodosTodoid401,
   PutTodosTodoid404,
@@ -63,6 +89,14 @@ export type {
   PutTodosTodoid500,
   PutTodosTodoidMutation,
   PutTodosTodoidMutationRequest,
+  PutTodosTodoidMutationRequestPriorityEnum,
+  PutTodosTodoidMutationRequestStatusEnum,
   PutTodosTodoidMutationResponse,
   PutTodosTodoidPathParams,
-} from "./PutTodosTodoid.ts";
+} from "./PutTodosTodoid";
+export {
+  putTodosTodoid200PriorityEnum,
+  putTodosTodoid200StatusEnum,
+  putTodosTodoidMutationRequestPriorityEnum,
+  putTodosTodoidMutationRequestStatusEnum,
+} from "./PutTodosTodoid";

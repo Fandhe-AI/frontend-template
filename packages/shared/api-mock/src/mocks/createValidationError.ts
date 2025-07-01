@@ -3,8 +3,8 @@
  * Do not edit manually.
  */
 
-import { createCustomError } from "./createCustomError.ts";
+import { createCustomError } from "./createCustomError";
 
 export function createValidationError() {
-	return createCustomError();
+  return createCustomError();
 }

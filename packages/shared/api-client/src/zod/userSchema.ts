@@ -5,7 +5,7 @@
 
 import type { ToZod } from "@kubb/plugin-zod/utils";
 import { z } from "zod";
-import type { User } from "../types/User.ts";
+import type { User } from "../types/User";
 
 /**
  * @description ユーザー情報

@@ -5,7 +5,7 @@
 
 import type { ToZod } from "@kubb/plugin-zod/utils";
 import { z } from "zod";
-import type { CreateCategoryRequest } from "../types/CreateCategoryRequest.ts";
+import type { CreateCategoryRequest } from "../types/CreateCategoryRequest";
 
 /**
  * @description カテゴリ作成時のリクエストボディ

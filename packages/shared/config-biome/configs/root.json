@@ -1,4 +1,15 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
-  "extends": ["./core.json"]
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true,
+    "defaultBranch": "main"
+  },
+  "files": {
+    "includes": ["**", "!apps/**/public/**"]
+  },
+  "linter": {
+    "includes": ["**", "!**/*.d.ts"]
+  }
 }

@@ -5,7 +5,7 @@
 
 import type { ToZod } from "@kubb/plugin-zod/utils";
 import { z } from "zod";
-import type { CustomError } from "../types/CustomError.ts";
+import type { CustomError } from "../types/CustomError";
 
 /**
  * @description エラー情報

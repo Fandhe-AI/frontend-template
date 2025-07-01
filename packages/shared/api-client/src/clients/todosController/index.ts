@@ -1,6 +1,6 @@
-export { deleteTodosTodoid } from "./deleteTodosTodoid.ts";
-export { getTodos } from "./getTodos.ts";
-export { getTodosTodoid } from "./getTodosTodoid.ts";
-export { patchTodosTodoidToggle } from "./patchTodosTodoidToggle.ts";
-export { postTodos } from "./postTodos.ts";
-export { putTodosTodoid } from "./putTodosTodoid.ts";
+export { deleteTodosTodoid } from "./deleteTodosTodoid";
+export { getTodos } from "./getTodos";
+export { getTodosTodoid } from "./getTodosTodoid";
+export { patchTodosTodoidToggle } from "./patchTodosTodoidToggle";
+export { postTodos } from "./postTodos";
+export { putTodosTodoid } from "./putTodosTodoid";

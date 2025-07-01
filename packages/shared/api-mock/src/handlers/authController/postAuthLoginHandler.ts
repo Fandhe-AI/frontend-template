@@ -4,24 +4,24 @@
  */
 
 import { http } from "msw";
-import { createPostAuthLoginMutationResponse } from "../../mocks/authController/createPostAuthLogin.ts";
-import type { PostAuthLoginMutationResponse } from "../../types/authController/PostAuthLogin.ts";
+import { createPostAuthLoginMutationResponse } from "../../mocks/authController/createPostAuthLogin";
+import type { PostAuthLoginMutationResponse } from "../../types/authController/PostAuthLogin";
 
 export function postAuthLoginHandler(
-	data?:
-		| PostAuthLoginMutationResponse
-		| ((info: Parameters<Parameters<typeof http.post>[1]>[0]) => Response),
+  data?:
+    | PostAuthLoginMutationResponse
+    | ((info: Parameters<Parameters<typeof http.post>[1]>[0]) => Response),
 ) {
-	return http.post("/auth/login", function handler(info) {
-		if (typeof data === "function") return data(info);
+  return http.post("http://localhost:8001/auth/login", function handler(info) {
+    if (typeof data === "function") return data(info);
 
-		return new Response(
-			JSON.stringify(data || createPostAuthLoginMutationResponse(data)),
-			{
-				headers: {
-					"Content-Type": "application/json",
-				},
-			},
-		);
-	});
+    return new Response(
+      JSON.stringify(data || createPostAuthLoginMutationResponse(data)),
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      },
+    );
+  });
 }

@@ -4,24 +4,24 @@
  */
 
 import { http } from "msw";
-import { createGetCategoriesQueryResponse } from "../../mocks/categoriesController/createGetCategories.ts";
-import type { GetCategoriesQueryResponse } from "../../types/categoriesController/GetCategories.ts";
+import { createGetCategoriesQueryResponse } from "../../mocks/categoriesController/createGetCategories";
+import type { GetCategoriesQueryResponse } from "../../types/categoriesController/GetCategories";
 
 export function getCategoriesHandler(
-	data?:
-		| GetCategoriesQueryResponse
-		| ((info: Parameters<Parameters<typeof http.get>[1]>[0]) => Response),
+  data?:
+    | GetCategoriesQueryResponse
+    | ((info: Parameters<Parameters<typeof http.get>[1]>[0]) => Response),
 ) {
-	return http.get("/categories", function handler(info) {
-		if (typeof data === "function") return data(info);
+  return http.get("http://localhost:8001/categories", function handler(info) {
+    if (typeof data === "function") return data(info);
 
-		return new Response(
-			JSON.stringify(data || createGetCategoriesQueryResponse(data)),
-			{
-				headers: {
-					"Content-Type": "application/json",
-				},
-			},
-		);
-	});
+    return new Response(
+      JSON.stringify(data || createGetCategoriesQueryResponse(data)),
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      },
+    );
+  });
 }

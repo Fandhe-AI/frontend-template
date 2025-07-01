@@ -1,9 +1,9 @@
 {
-  "name": "@repo/shared/api-spec",
+  "name": "@repo/shared-api-spec",
   "version": "0.0.0",
   "private": true,
   "description": "API specification for the project",
   "exports": {
-    "./openapi/*": "./openapi/*.yaml"
+    "./openapi/*": "./openapi/*.json"
   }
 }

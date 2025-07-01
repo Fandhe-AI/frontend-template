@@ -3,7 +3,7 @@
  * Do not edit manually.
  */
 
-import type { User } from "./User.ts";
+import type { User } from "./User";
 
 /**
  * @description 認証成功時のレスポンス

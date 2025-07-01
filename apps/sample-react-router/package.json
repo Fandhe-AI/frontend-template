@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@react-router/dev": "^7.5.3",
-    "@repo/shared/config-typescript": "workspace:*",
+    "@repo/shared-config-typescript": "workspace:*",
     "@tailwindcss/vite": "^4.1.4",
     "@types/node": "^20",
     "@types/react": "^19.1.2",

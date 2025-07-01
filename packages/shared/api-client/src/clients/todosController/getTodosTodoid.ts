@@ -14,8 +14,8 @@ import type {
   GetTodosTodoid500,
   GetTodosTodoidPathParams,
   GetTodosTodoidQueryResponse,
-} from "../../types/todosController/GetTodosTodoid.ts";
-import { getTodosTodoidQueryResponseSchema } from "../../zod/todosController/getTodosTodoidSchema.ts";
+} from "../../types/todosController/GetTodosTodoid";
+import { getTodosTodoidQueryResponseSchema } from "../../zod/todosController/getTodosTodoidSchema";
 
 function getGetTodosTodoidUrl(todoId: GetTodosTodoidPathParams["todoId"]) {
   return `/todos/${todoId}` as const;

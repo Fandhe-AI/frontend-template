@@ -5,7 +5,7 @@ export {
   deleteTodosTodoid500Schema,
   deleteTodosTodoidMutationResponseSchema,
   deleteTodosTodoidPathParamsSchema,
-} from "./deleteTodosTodoidSchema.ts";
+} from "./deleteTodosTodoidSchema";
 export {
   getTodos200Schema,
   getTodos400Schema,
@@ -13,7 +13,7 @@ export {
   getTodos500Schema,
   getTodosQueryParamsSchema,
   getTodosQueryResponseSchema,
-} from "./getTodosSchema.ts";
+} from "./getTodosSchema";
 export {
   getTodosTodoid200Schema,
   getTodosTodoid401Schema,
@@ -21,7 +21,7 @@ export {
   getTodosTodoid500Schema,
   getTodosTodoidPathParamsSchema,
   getTodosTodoidQueryResponseSchema,
-} from "./getTodosTodoidSchema.ts";
+} from "./getTodosTodoidSchema";
 export {
   patchTodosTodoidToggle200Schema,
   patchTodosTodoidToggle401Schema,
@@ -29,7 +29,7 @@ export {
   patchTodosTodoidToggle500Schema,
   patchTodosTodoidToggleMutationResponseSchema,
   patchTodosTodoidTogglePathParamsSchema,
-} from "./patchTodosTodoidToggleSchema.ts";
+} from "./patchTodosTodoidToggleSchema";
 export {
   postTodos201Schema,
   postTodos400Schema,
@@ -38,7 +38,7 @@ export {
   postTodos500Schema,
   postTodosMutationRequestSchema,
   postTodosMutationResponseSchema,
-} from "./postTodosSchema.ts";
+} from "./postTodosSchema";
 export {
   putTodosTodoid200Schema,
   putTodosTodoid400Schema,
@@ -49,4 +49,4 @@ export {
   putTodosTodoidMutationRequestSchema,
   putTodosTodoidMutationResponseSchema,
   putTodosTodoidPathParamsSchema,
-} from "./putTodosTodoidSchema.ts";
+} from "./putTodosTodoidSchema";

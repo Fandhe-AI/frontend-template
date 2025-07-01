@@ -3,7 +3,7 @@ export {
   getCategories401Schema,
   getCategories500Schema,
   getCategoriesQueryResponseSchema,
-} from "./getCategoriesSchema.ts";
+} from "./getCategoriesSchema";
 export {
   postCategories201Schema,
   postCategories400Schema,
@@ -12,4 +12,4 @@ export {
   postCategories500Schema,
   postCategoriesMutationRequestSchema,
   postCategoriesMutationResponseSchema,
-} from "./postCategoriesSchema.ts";
+} from "./postCategoriesSchema";

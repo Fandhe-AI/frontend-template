@@ -4,24 +4,24 @@
  */
 
 import { http } from "msw";
-import { createPostCategoriesMutationResponse } from "../../mocks/categoriesController/createPostCategories.ts";
-import type { PostCategoriesMutationResponse } from "../../types/categoriesController/PostCategories.ts";
+import { createPostCategoriesMutationResponse } from "../../mocks/categoriesController/createPostCategories";
+import type { PostCategoriesMutationResponse } from "../../types/categoriesController/PostCategories";
 
 export function postCategoriesHandler(
-	data?:
-		| PostCategoriesMutationResponse
-		| ((info: Parameters<Parameters<typeof http.post>[1]>[0]) => Response),
+  data?:
+    | PostCategoriesMutationResponse
+    | ((info: Parameters<Parameters<typeof http.post>[1]>[0]) => Response),
 ) {
-	return http.post("/categories", function handler(info) {
-		if (typeof data === "function") return data(info);
+  return http.post("http://localhost:8001/categories", function handler(info) {
+    if (typeof data === "function") return data(info);
 
-		return new Response(
-			JSON.stringify(data || createPostCategoriesMutationResponse(data)),
-			{
-				headers: {
-					"Content-Type": "application/json",
-				},
-			},
-		);
-	});
+    return new Response(
+      JSON.stringify(data || createPostCategoriesMutationResponse(data)),
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      },
+    );
+  });
 }

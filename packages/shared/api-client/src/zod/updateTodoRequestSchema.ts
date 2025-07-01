@@ -5,7 +5,7 @@
 
 import type { ToZod } from "@kubb/plugin-zod/utils";
 import { z } from "zod";
-import type { UpdateTodoRequest } from "../types/UpdateTodoRequest.ts";
+import type { UpdateTodoRequest } from "../types/UpdateTodoRequest";
 
 /**
  * @description Todo 更新時のリクエストボディ（部分更新対応）

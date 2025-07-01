@@ -1,19 +1,19 @@
-import { defineConfig } from "@kubb/core";
+import { defineConfig, type UserConfig } from "@kubb/core";
 import { pluginClient } from "@kubb/plugin-client";
 import { pluginOas } from "@kubb/plugin-oas";
 import { pluginTs } from "@kubb/plugin-ts";
 import { pluginZod } from "@kubb/plugin-zod";
-import baseConfig from "@repo/shared/config-kubb/configs/base.json";
-import clientConfig from "@repo/shared/config-kubb/configs/client.json";
-import oasConfig from "@repo/shared/config-kubb/configs/oas.json";
-import tsConfig from "@repo/shared/config-kubb/configs/ts.json";
-import zodConfig from "@repo/shared/config-kubb/configs/zod.json";
+import todoData from "@repo/shared-api-spec/openapi/todo";
+import baseConfig from "@repo/shared-config-kubb/configs/base";
+import clientConfig from "@repo/shared-config-kubb/configs/client";
+import oasConfig from "@repo/shared-config-kubb/configs/oas";
+import tsConfig from "@repo/shared-config-kubb/configs/ts";
+import zodConfig from "@repo/shared-config-kubb/configs/zod";
 
 export default defineConfig({
-  ...baseConfig,
+  ...(baseConfig as Omit<UserConfig, "input">),
   input: {
-    // FIXME: @repo/shared/api-spec/openapi/todo.yaml に移行する
-    path: "../api-spec/openapi/todo.yaml",
+    data: todoData,
   },
   plugins: [
     pluginOas(oasConfig as Parameters<typeof pluginOas>[0]),

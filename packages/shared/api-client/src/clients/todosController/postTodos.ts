@@ -15,11 +15,11 @@ import type {
   PostTodos500,
   PostTodosMutationRequest,
   PostTodosMutationResponse,
-} from "../../types/todosController/PostTodos.ts";
+} from "../../types/todosController/PostTodos";
 import {
   postTodosMutationRequestSchema,
   postTodosMutationResponseSchema,
-} from "../../zod/todosController/postTodosSchema.ts";
+} from "../../zod/todosController/postTodosSchema";
 
 function getPostTodosUrl() {
   return `/todos` as const;

@@ -1,5 +1,5 @@
 {
-  "name": "@repo/shared/api-zod",
+  "name": "@repo/shared-api-zod",
   "version": "0.0.0",
   "private": true,
   "description": "API zod for the project",
@@ -16,9 +16,9 @@
     "@kubb/plugin-oas": "^3.12.1",
     "@kubb/plugin-ts": "^3.12.1",
     "@kubb/plugin-zod": "^3.12.1",
-    "@repo/shared/api-spec": "workspace:*",
-    "@repo/shared/config-kubb": "workspace:*",
-    "@repo/shared/config-typescript": "workspace:*"
+    "@repo/shared-api-spec": "workspace:*",
+    "@repo/shared-config-kubb": "workspace:*",
+    "@repo/shared-config-typescript": "workspace:*"
   },
   "dependencies": {
     "zod": "^3.25.67"

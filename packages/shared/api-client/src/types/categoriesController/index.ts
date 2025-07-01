@@ -4,7 +4,7 @@ export type {
   GetCategories500,
   GetCategoriesQuery,
   GetCategoriesQueryResponse,
-} from "./GetCategories.ts";
+} from "./GetCategories";
 export type {
   PostCategories201,
   PostCategories400,
@@ -14,4 +14,4 @@ export type {
   PostCategoriesMutation,
   PostCategoriesMutationRequest,
   PostCategoriesMutationResponse,
-} from "./PostCategories.ts";
+} from "./PostCategories";

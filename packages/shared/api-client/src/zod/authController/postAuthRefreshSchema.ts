@@ -12,8 +12,7 @@ import type {
   PostAuthRefresh500,
   PostAuthRefreshMutationRequest,
   PostAuthRefreshMutationResponse,
-} from "../../types/authController/PostAuthRefresh.ts";
-import { customErrorSchema } from "../customErrorSchema.ts";
+} from "../../types/authController/PostAuthRefresh";
 
 /**
  * @description トークンの更新に成功
@@ -28,21 +27,63 @@ export const postAuthRefresh200Schema = z.object({
  * @description リクエストが不正です
  */
 export const postAuthRefresh400Schema = z
-  .lazy(() => customErrorSchema)
+  .object({
+    error: z.object({
+      code: z.string().describe("エラーコード"),
+      message: z.string().describe("エラーメッセージ"),
+      details: z
+        .array(
+          z.object({
+            field: z.string().describe("エラーが発生したフィールド名"),
+            message: z.string().describe("フィールド固有のエラーメッセージ"),
+          }),
+        )
+        .describe("詳細なエラー情報（バリデーションエラー時など）")
+        .optional(),
+    }),
+  })
   .describe("エラー情報") as unknown as ToZod<PostAuthRefresh400>;
 
 /**
  * @description 無効なリフレッシュトークン
  */
 export const postAuthRefresh401Schema = z
-  .lazy(() => customErrorSchema)
+  .object({
+    error: z.object({
+      code: z.string().describe("エラーコード"),
+      message: z.string().describe("エラーメッセージ"),
+      details: z
+        .array(
+          z.object({
+            field: z.string().describe("エラーが発生したフィールド名"),
+            message: z.string().describe("フィールド固有のエラーメッセージ"),
+          }),
+        )
+        .describe("詳細なエラー情報（バリデーションエラー時など）")
+        .optional(),
+    }),
+  })
   .describe("エラー情報") as unknown as ToZod<PostAuthRefresh401>;
 
 /**
  * @description サーバー内部エラー
  */
 export const postAuthRefresh500Schema = z
-  .lazy(() => customErrorSchema)
+  .object({
+    error: z.object({
+      code: z.string().describe("エラーコード"),
+      message: z.string().describe("エラーメッセージ"),
+      details: z
+        .array(
+          z.object({
+            field: z.string().describe("エラーが発生したフィールド名"),
+            message: z.string().describe("フィールド固有のエラーメッセージ"),
+          }),
+        )
+        .describe("詳細なエラー情報（バリデーションエラー時など）")
+        .optional(),
+    }),
+  })
   .describe("エラー情報") as unknown as ToZod<PostAuthRefresh500>;
 
 export const postAuthRefreshMutationRequestSchema = z.object({

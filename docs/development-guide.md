@@ -127,7 +127,7 @@ Feature-Sliced Design の詳細なアーキテクチャ設計と依存関係ル�
 ```typescript
 // ✅ Good: 下位レイヤーへの依存
 // features/auth/ui/LoginForm.tsx
-import { Button } from '@repo/shared/ui';
+import { Button } from '@repo/shared-ui';
 import { User } from '@repo/entities/user';
 
 // ❌ Bad: 上位レイヤーへの依存

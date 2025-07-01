@@ -5,7 +5,7 @@ export {
   postAuthLogin500Schema,
   postAuthLoginMutationRequestSchema,
   postAuthLoginMutationResponseSchema,
-} from "./postAuthLoginSchema.ts";
+} from "./postAuthLoginSchema";
 export {
   postAuthRefresh200Schema,
   postAuthRefresh400Schema,
@@ -13,4 +13,4 @@ export {
   postAuthRefresh500Schema,
   postAuthRefreshMutationRequestSchema,
   postAuthRefreshMutationResponseSchema,
-} from "./postAuthRefreshSchema.ts";
+} from "./postAuthRefreshSchema";

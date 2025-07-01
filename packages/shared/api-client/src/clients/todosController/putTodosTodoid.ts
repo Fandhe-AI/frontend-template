@@ -17,11 +17,11 @@ import type {
   PutTodosTodoidMutationRequest,
   PutTodosTodoidMutationResponse,
   PutTodosTodoidPathParams,
-} from "../../types/todosController/PutTodosTodoid.ts";
+} from "../../types/todosController/PutTodosTodoid";
 import {
   putTodosTodoidMutationRequestSchema,
   putTodosTodoidMutationResponseSchema,
-} from "../../zod/todosController/putTodosTodoidSchema.ts";
+} from "../../zod/todosController/putTodosTodoidSchema";
 
 function getPutTodosTodoidUrl(todoId: PutTodosTodoidPathParams["todoId"]) {
   return `/todos/${todoId}` as const;

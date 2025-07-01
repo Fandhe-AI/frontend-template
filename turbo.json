@@ -1,7 +1,8 @@
 {
   "$schema": "https://turborepo.com/schema.json",
+  "globalDependencies": [".env*"],
   "ui": "tui",
-  "globalDependencies": ["**/.env.*local"],
+  "envMode": "loose",
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
@@ -19,6 +20,7 @@
     },
     "generate": {
       "dependsOn": ["^generate"],
+      "inputs": ["$TURBO_DEFAULT$", ".env.example", ".env"],
       "outputs": ["src/**"]
     },
     "lint": {},

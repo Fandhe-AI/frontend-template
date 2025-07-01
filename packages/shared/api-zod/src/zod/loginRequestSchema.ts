@@ -5,7 +5,7 @@
 
 import type { ToZod } from "@kubb/plugin-zod/utils";
 import { z } from "zod";
-import type { LoginRequest } from "../types/LoginRequest.ts";
+import type { LoginRequest } from "../types/LoginRequest";
 
 /**
  * @description ログイン時のリクエストボディ

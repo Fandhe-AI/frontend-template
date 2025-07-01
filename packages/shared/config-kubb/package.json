@@ -1,9 +1,9 @@
 {
-  "name": "@repo/shared/config-kubb",
+  "name": "@repo/shared-config-kubb",
   "version": "0.0.0",
   "private": true,
   "description": "Kubb config for the project",
   "exports": {
-    "./*": "./configs/*.json"
+    "./configs/*": "./configs/*.json"
   }
 }

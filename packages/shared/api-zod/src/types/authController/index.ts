@@ -6,7 +6,7 @@ export type {
   PostAuthLoginMutation,
   PostAuthLoginMutationRequest,
   PostAuthLoginMutationResponse,
-} from "./PostAuthLogin.ts";
+} from "./PostAuthLogin";
 export type {
   PostAuthRefresh200,
   PostAuthRefresh400,
@@ -15,4 +15,4 @@ export type {
   PostAuthRefreshMutation,
   PostAuthRefreshMutationRequest,
   PostAuthRefreshMutationResponse,
-} from "./PostAuthRefresh.ts";
+} from "./PostAuthRefresh";

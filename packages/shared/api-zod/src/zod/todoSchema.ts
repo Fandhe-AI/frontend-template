@@ -5,7 +5,7 @@
 
 import type { ToZod } from "@kubb/plugin-zod/utils";
 import { z } from "zod";
-import type { Todo } from "../types/Todo.ts";
+import type { Todo } from "../types/Todo";
 
 /**
  * @description Todo アイテムを表現するオブジェクト
