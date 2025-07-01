@@ -8,6 +8,7 @@
     "commitlint",
     "cursorignore",
     "depcruise",
+    "dxyz",
     "Instantiator",
     "isbot",
     "kubb",
@@ -18,6 +19,7 @@
     "syncpackrc",
     "Todoid",
     "Turbopack",
-    "Turborepo"
+    "Turborepo",
+    "xlarge"
   ]
 }

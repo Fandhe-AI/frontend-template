@@ -15,6 +15,7 @@
     "next": "15.3.4"
   },
   "devDependencies": {
+    "@repo/shared-config-tailwind": "workspace:*",
     "@repo/shared-config-typescript": "workspace:*",
     "@types/node": "^20",
     "@types/react": "^19",
