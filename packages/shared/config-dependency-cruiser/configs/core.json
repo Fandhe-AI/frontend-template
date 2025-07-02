@@ -1,12 +1,14 @@
 {
   "forbidden": [
     {
-      "name": "no-circular",
+      "name": "no-circular-at-runtime",
       "severity": "error",
-      "comment": "循環依存を禁止",
       "from": {},
       "to": {
-        "circular": true
+        "circular": true,
+        "viaOnly": {
+          "dependencyTypesNot": ["type-only"]
+        }
       }
     },
     {
