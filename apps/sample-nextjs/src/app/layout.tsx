@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default ({ children }: Readonly<Props>): ReactNode => {
   return (
-    <html lang="en">
+    <html lang="ja">
       <body className="antialiased">{children}</body>
     </html>
   );
