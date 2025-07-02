@@ -1,19 +1,29 @@
 {
-  "eslint.workingDirectories": [
-    {
-      "mode": "auto"
-    }
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "editor.defaultFormatter": "biomejs.biome",
+  "tailwindCSS.experimental.classRegex": [
+    ["([\"'`][^\"'`]*.*?[\"'`])", "[\"'`]([^\"'`]*).*?[\"'`]"]
   ],
   "cSpell.words": [
+    "commitlint",
     "cursorignore",
     "depcruise",
+    "dxyz",
     "Instantiator",
+    "isbot",
     "kubb",
     "lefthook",
+    "nextjs",
     "Nonoctal",
     "renovatebot",
+    "syncpack",
     "syncpackrc",
+    "Todoid",
     "Turbopack",
-    "Turborepo"
+    "Turborepo",
+    "xlarge"
   ]
 }

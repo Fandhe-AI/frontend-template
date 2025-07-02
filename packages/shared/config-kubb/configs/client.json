@@ -1,0 +1,5 @@
+{
+  "group": { "type": "tag" },
+  "parser": "zod",
+  "client": "fetch"
+}

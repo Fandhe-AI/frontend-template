@@ -1,9 +1,8 @@
 {
-  "name": "@repo/shared/config-typescript",
+  "name": "@repo/shared-config-typescript",
   "version": "0.0.0",
-  "private": true,
-  "license": "MIT",
   "exports": {
     "./configs/*": "./configs/*.json"
-  }
+  },
+  "private": true
 }

@@ -1,0 +1,35 @@
+{
+  "name": "sample-react-router",
+  "dependencies": {
+    "@react-router/node": "7.6.3",
+    "@react-router/serve": "7.6.3",
+    "@repo/shared-ui-layout-react-router": "workspace:*",
+    "@repo/shared-ui-partial-react-router": "workspace:*",
+    "isbot": "5.1.28",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-router": "7.6.3"
+  },
+  "devDependencies": {
+    "@react-router/dev": "7.6.3",
+    "@repo/shared-config-tailwind": "workspace:*",
+    "@repo/shared-config-typescript": "workspace:*",
+    "@tailwindcss/vite": "4.1.11",
+    "@types/node": "24.0.10",
+    "@types/react": "19",
+    "@types/react-dom": "19",
+    "tailwind-variants": "1.0.0",
+    "tailwindcss": "4",
+    "typescript": "5",
+    "vite": "7.0.0",
+    "vite-tsconfig-paths": "5.1.4"
+  },
+  "private": true,
+  "scripts": {
+    "build": "react-router build",
+    "check:types": "react-router typegen && tsc --noEmit",
+    "dev": "react-router dev",
+    "start": "react-router-serve ./build/server/index.js"
+  },
+  "type": "module"
+}

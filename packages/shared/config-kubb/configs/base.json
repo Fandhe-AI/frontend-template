@@ -1,0 +1,10 @@
+{
+  "root": ".",
+  "output": {
+    "path": "./src",
+    "clean": true,
+    "extension": {
+      ".ts": ""
+    }
+  }
+}

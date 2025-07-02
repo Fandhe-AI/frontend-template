@@ -1,9 +1,9 @@
 {
-  "name": "@repo/shared/config-dependency-cruiser",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@repo/shared-config-dependency-cruiser",
   "description": "Dependency cruiser configuration for Feature-Sliced Design architecture",
+  "version": "0.0.0",
   "exports": {
-    "./configs": "./configs/index.json"
-  }
+    "./configs/*": "./configs/*.json"
+  },
+  "private": true
 }

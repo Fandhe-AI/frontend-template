@@ -1,0 +1,8 @@
+{
+  "group": {
+    "type": "tag"
+  },
+  "enumType": "asConst",
+  "dateType": "date",
+  "unknownType": "unknown"
+}

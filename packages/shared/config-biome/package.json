@@ -1,19 +1,19 @@
 {
-  "name": "@repo/shared/config-biome",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@repo/shared-config-biome",
   "description": "Biome configuration for linting and formatting with v2.0.6 features",
-  "type": "module",
+  "version": "0.0.0",
   "exports": {
     "./configs/*": "./configs/*.json"
   },
   "keywords": [
     "biome",
-    "linter",
     "formatter",
-    "typescript",
     "javascript",
+    "linter",
+    "nextjs",
     "react",
-    "nextjs"
-  ]
+    "typescript"
+  ],
+  "private": true,
+  "type": "module"
 }

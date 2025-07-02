@@ -1,12 +1,14 @@
 {
   "forbidden": [
     {
-      "name": "no-circular",
+      "name": "no-circular-at-runtime",
       "severity": "error",
-      "comment": "循環依存を禁止",
       "from": {},
       "to": {
-        "circular": true
+        "circular": true,
+        "viaOnly": {
+          "dependencyTypesNot": ["type-only"]
+        }
       }
     },
     {
@@ -24,9 +26,13 @@
           "(^|/)\\.(gitignore|npmignore|eslintrc|prettierrc)",
           "(^|/)turbo\\.json$",
           "(^|/)next\\.config\\.(js|ts)$",
+          "(^|/).next",
           "(^|/)jest\\.config\\.(js|ts)$",
           "(^|/)vitest\\.config\\.(js|ts)$",
-          "(^|/)playwright\\.config\\.(js|ts)$"
+          "(^|/)playwright\\.config\\.(js|ts)$",
+
+          "^apps/sample-nextjs/postcss.config.ts$",
+          "^apps/sample-react-router/src/routes/.+\\.tsx$"
         ]
       },
       "to": {}
@@ -35,6 +41,10 @@
   "options": {
     "doNotFollow": {
       "path": "node_modules"
+    },
+    "exclude": {
+      "path": "(coverage|test|node_modules|dist|build|.next|.react-router)",
+      "dynamic": true
     }
   }
 }

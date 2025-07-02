@@ -1,0 +1,28 @@
+{
+  "name": "sample-nextjs",
+  "version": "0.1.0",
+  "dependencies": {
+    "next": "15.4.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@repo/shared-config-tailwind": "workspace:*",
+    "@repo/shared-config-typescript": "workspace:*",
+    "@tailwindcss/postcss": "4",
+    "@types/node": "24.0.10",
+    "@types/react": "19",
+    "@types/react-dom": "19",
+    "tailwind-variants": "1.0.0",
+    "tailwindcss": "4",
+    "typescript": "5"
+  },
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "check:types": "tsc --noEmit",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  }
+}

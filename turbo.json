@@ -17,6 +17,11 @@
       "cache": false,
       "persistent": true
     },
+    "generate": {
+      "dependsOn": ["^generate"],
+      "inputs": ["$TURBO_DEFAULT$", ".env.example", ".env"],
+      "outputs": ["src/**"]
+    },
     "lint": {},
     "lint:fix": {},
     "format": {},
