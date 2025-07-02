@@ -1,0 +1,11 @@
+{
+  "$schema": "./node_modules/syncpack/schema.json",
+  "versionGroups": [
+    {
+      "dependencies": ["@types/**"],
+      "dependencyTypes": ["!dev"],
+      "isBanned": true,
+      "label": "types パッケージは dev でのみ許可"
+    }
+  ]
+}

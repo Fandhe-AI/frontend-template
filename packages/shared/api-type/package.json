@@ -1,22 +1,22 @@
 {
   "name": "@repo/shared-api-type",
-  "version": "0.0.0",
-  "private": true,
   "description": "API type for the project",
-  "exports": {
-    ".": "./src/types/index.ts"
-  },
-  "scripts": {
-    "generate": "kubb generate",
-    "check:types": "tsc --noEmit"
-  },
+  "version": "0.0.0",
   "devDependencies": {
-    "@kubb/cli": "^3.12.1",
-    "@kubb/core": "^3.12.1",
-    "@kubb/plugin-oas": "^3.12.1",
-    "@kubb/plugin-ts": "^3.12.1",
+    "@kubb/cli": "3.13.1",
+    "@kubb/core": "3.13.1",
+    "@kubb/plugin-oas": "3.13.1",
+    "@kubb/plugin-ts": "3.13.1",
     "@repo/shared-api-spec": "workspace:*",
     "@repo/shared-config-kubb": "workspace:*",
     "@repo/shared-config-typescript": "workspace:*"
+  },
+  "exports": {
+    ".": "./src/types/index.ts"
+  },
+  "private": true,
+  "scripts": {
+    "check:types": "tsc --noEmit",
+    "generate": "kubb generate"
   }
 }

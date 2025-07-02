@@ -9,16 +9,16 @@ importers:
   .:
     devDependencies:
       '@biomejs/biome':
-        specifier: ^2.0.6
+        specifier: 2.0.6
         version: 2.0.6
       '@commitlint/cli':
-        specifier: ^19.8.1
-        version: 19.8.1(@types/node@24.0.8)(typescript@5.8.3)
+        specifier: 19.8.1
+        version: 19.8.1(@types/node@24.0.10)(typescript@5.8.3)
       '@commitlint/prompt-cli':
-        specifier: ^19.8.1
-        version: 19.8.1(@types/node@24.0.8)(typescript@5.8.3)
+        specifier: 19.8.1
+        version: 19.8.1(@types/node@24.0.10)(typescript@5.8.3)
       '@commitlint/types':
-        specifier: ^19.8.1
+        specifier: 19.8.1
         version: 19.8.1
       '@repo/shared-config-biome':
         specifier: workspace:*
@@ -29,43 +29,52 @@ importers:
       '@repo/shared-config-dependency-cruiser':
         specifier: workspace:*
         version: link:packages/shared/config-dependency-cruiser
+      '@repo/shared-config-syncpack':
+        specifier: workspace:*
+        version: link:packages/shared/config-syncpack
       '@repo/shared-config-typescript':
         specifier: workspace:*
         version: link:packages/shared/config-typescript
       dependency-cruiser:
-        specifier: ^16.10.3
+        specifier: 16.10.3
         version: 16.10.3
       lefthook:
-        specifier: ^1.11.14
+        specifier: 1.11.14
         version: 1.11.14
+      syncpack:
+        specifier: 14.0.0-alpha.17
+        version: 14.0.0-alpha.17
+      tsx:
+        specifier: 4.20.3
+        version: 4.20.3
       turbo:
-        specifier: ^2.5.4
+        specifier: 2.5.4
         version: 2.5.4
 
   apps/mock:
     dependencies:
       '@react-router/node':
-        specifier: ^7.5.3
+        specifier: 7.6.3
         version: 7.6.3(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)
       '@react-router/serve':
-        specifier: ^7.5.3
+        specifier: 7.6.3
         version: 7.6.3(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)
       isbot:
-        specifier: ^5.1.27
+        specifier: 5.1.28
         version: 5.1.28
       react:
-        specifier: ^19.1.0
+        specifier: 19.1.0
         version: 19.1.0
       react-dom:
-        specifier: ^19.1.0
+        specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
       react-router:
-        specifier: ^7.5.3
+        specifier: 7.6.3
         version: 7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     devDependencies:
       '@react-router/dev':
-        specifier: ^7.5.3
-        version: 7.6.3(@react-router/serve@7.6.3(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3))(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(tsx@4.20.3)(typescript@5.8.3)(vite@6.3.5(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0))(yaml@2.8.0)
+        specifier: 7.6.3
+        version: 7.6.3(@react-router/serve@7.6.3(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3))(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(tsx@4.20.3)(typescript@5.8.3)(vite@7.0.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0))(yaml@2.8.0)
       '@repo/shared-api-mock':
         specifier: workspace:*
         version: link:../../packages/shared/api-mock
@@ -73,37 +82,37 @@ importers:
         specifier: workspace:*
         version: link:../../packages/shared/config-typescript
       '@types/node':
-        specifier: ^20
-        version: 20.19.2
+        specifier: 24.0.10
+        version: 24.0.10
       '@types/react':
-        specifier: ^19.1.2
+        specifier: '19'
         version: 19.1.8
       '@types/react-dom':
-        specifier: ^19.1.2
+        specifier: '19'
         version: 19.1.6(@types/react@19.1.8)
       msw:
-        specifier: ^2.10.2
-        version: 2.10.2(@types/node@20.19.2)(typescript@5.8.3)
+        specifier: 2.10.2
+        version: 2.10.2(@types/node@24.0.10)(typescript@5.8.3)
       typescript:
-        specifier: ^5.8.3
+        specifier: '5'
         version: 5.8.3
       vite:
-        specifier: ^6.3.3
-        version: 6.3.5(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)
+        specifier: 7.0.0
+        version: 7.0.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)
       vite-tsconfig-paths:
-        specifier: ^5.1.4
-        version: 5.1.4(typescript@5.8.3)(vite@6.3.5(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0))
+        specifier: 5.1.4
+        version: 5.1.4(typescript@5.8.3)(vite@7.0.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0))
 
   apps/sample-nextjs:
     dependencies:
       next:
-        specifier: 15.3.4
-        version: 15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: 15.4.0
+        version: 15.4.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react:
-        specifier: ^19.0.0
+        specifier: 19.1.0
         version: 19.1.0
       react-dom:
-        specifier: ^19.0.0
+        specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
     devDependencies:
       '@repo/shared-config-tailwind':
@@ -113,34 +122,34 @@ importers:
         specifier: workspace:*
         version: link:../../packages/shared/config-typescript
       '@tailwindcss/postcss':
-        specifier: ^4
+        specifier: '4'
         version: 4.1.11
       '@types/node':
-        specifier: ^20
-        version: 20.19.2
+        specifier: 24.0.10
+        version: 24.0.10
       '@types/react':
-        specifier: ^19
-        version: 19.1.0
+        specifier: '19'
+        version: 19.1.8
       '@types/react-dom':
-        specifier: ^19
-        version: 19.1.1(@types/react@19.1.0)
+        specifier: '19'
+        version: 19.1.6(@types/react@19.1.8)
       tailwind-variants:
-        specifier: ^1.0.0
+        specifier: 1.0.0
         version: 1.0.0(tailwindcss@4.1.11)
       tailwindcss:
-        specifier: ^4
+        specifier: '4'
         version: 4.1.11
       typescript:
-        specifier: ^5
-        version: 5.8.2
+        specifier: '5'
+        version: 5.8.3
 
   apps/sample-react-router:
     dependencies:
       '@react-router/node':
-        specifier: ^7.5.3
+        specifier: 7.6.3
         version: 7.6.3(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)
       '@react-router/serve':
-        specifier: ^7.5.3
+        specifier: 7.6.3
         version: 7.6.3(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)
       '@repo/shared-ui-layout-react-router':
         specifier: workspace:*
@@ -149,21 +158,21 @@ importers:
         specifier: workspace:*
         version: link:../../packages/shared/ui-partial-react-router
       isbot:
-        specifier: ^5.1.27
+        specifier: 5.1.28
         version: 5.1.28
       react:
-        specifier: ^19.1.0
+        specifier: 19.1.0
         version: 19.1.0
       react-dom:
-        specifier: ^19.1.0
+        specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
       react-router:
-        specifier: ^7.5.3
+        specifier: 7.6.3
         version: 7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
     devDependencies:
       '@react-router/dev':
-        specifier: ^7.5.3
-        version: 7.6.3(@react-router/serve@7.6.3(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3))(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(tsx@4.20.3)(typescript@5.8.3)(vite@6.3.5(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0))(yaml@2.8.0)
+        specifier: 7.6.3
+        version: 7.6.3(@react-router/serve@7.6.3(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3))(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(tsx@4.20.3)(typescript@5.8.3)(vite@7.0.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0))(yaml@2.8.0)
       '@repo/shared-config-tailwind':
         specifier: workspace:*
         version: link:../../packages/shared/config-tailwind
@@ -171,57 +180,57 @@ importers:
         specifier: workspace:*
         version: link:../../packages/shared/config-typescript
       '@tailwindcss/vite':
-        specifier: ^4.1.4
-        version: 4.1.11(vite@6.3.5(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0))
+        specifier: 4.1.11
+        version: 4.1.11(vite@7.0.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0))
       '@types/node':
-        specifier: ^20
-        version: 20.19.2
+        specifier: 24.0.10
+        version: 24.0.10
       '@types/react':
-        specifier: ^19.1.2
+        specifier: '19'
         version: 19.1.8
       '@types/react-dom':
-        specifier: ^19.1.2
+        specifier: '19'
         version: 19.1.6(@types/react@19.1.8)
       tailwind-variants:
-        specifier: ^1.0.0
+        specifier: 1.0.0
         version: 1.0.0(tailwindcss@4.1.11)
       tailwindcss:
-        specifier: ^4.1.4
+        specifier: '4'
         version: 4.1.11
       typescript:
-        specifier: ^5.8.3
+        specifier: '5'
         version: 5.8.3
       vite:
-        specifier: ^6.3.3
-        version: 6.3.5(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)
+        specifier: 7.0.0
+        version: 7.0.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)
       vite-tsconfig-paths:
-        specifier: ^5.1.4
-        version: 5.1.4(typescript@5.8.3)(vite@6.3.5(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0))
+        specifier: 5.1.4
+        version: 5.1.4(typescript@5.8.3)(vite@7.0.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0))
 
   packages/shared/api-client:
     dependencies:
       zod:
-        specifier: ^3.25.67
+        specifier: 3.25.67
         version: 3.25.67
     devDependencies:
       '@kubb/cli':
-        specifier: ^3.12.1
-        version: 3.12.1(typescript@5.8.3)
+        specifier: 3.13.1
+        version: 3.13.1(typescript@5.8.3)
       '@kubb/core':
-        specifier: ^3.12.1
-        version: 3.12.1
+        specifier: 3.13.1
+        version: 3.13.1
       '@kubb/plugin-client':
-        specifier: ^3.12.1
-        version: 3.12.1(@kubb/react@3.12.1)
+        specifier: 3.13.1
+        version: 3.13.1(@kubb/react@3.12.1)
       '@kubb/plugin-oas':
-        specifier: ^3.12.1
-        version: 3.12.1(@kubb/react@3.12.1)
+        specifier: 3.13.1
+        version: 3.13.1(@kubb/react@3.12.1)
       '@kubb/plugin-ts':
-        specifier: ^3.12.1
-        version: 3.12.1(@kubb/react@3.12.1)
+        specifier: 3.13.1
+        version: 3.13.1(@kubb/react@3.12.1)
       '@kubb/plugin-zod':
-        specifier: ^3.12.1
-        version: 3.12.1(@kubb/react@3.12.1)
+        specifier: 3.13.1
+        version: 3.13.1(@kubb/react@3.12.1)
       '@repo/shared-api-spec':
         specifier: workspace:*
         version: link:../api-spec
@@ -235,26 +244,26 @@ importers:
   packages/shared/api-mock:
     devDependencies:
       '@faker-js/faker':
-        specifier: ^9.8.0
-        version: 9.8.0
+        specifier: 9.9.0
+        version: 9.9.0
       '@kubb/cli':
-        specifier: ^3.12.1
-        version: 3.12.1(typescript@5.8.3)
+        specifier: 3.13.1
+        version: 3.13.1(typescript@5.8.3)
       '@kubb/core':
-        specifier: ^3.12.1
-        version: 3.12.1
+        specifier: 3.13.1
+        version: 3.13.1
       '@kubb/plugin-faker':
-        specifier: ^3.12.1
-        version: 3.12.1(@kubb/react@3.12.1)
+        specifier: 3.13.1
+        version: 3.13.1(@kubb/react@3.12.1)
       '@kubb/plugin-msw':
-        specifier: ^3.12.1
-        version: 3.12.1(@kubb/react@3.12.1)
+        specifier: 3.13.1
+        version: 3.13.1(@kubb/react@3.12.1)
       '@kubb/plugin-oas':
-        specifier: ^3.12.1
-        version: 3.12.1(@kubb/react@3.12.1)
+        specifier: 3.13.1
+        version: 3.13.1(@kubb/react@3.12.1)
       '@kubb/plugin-ts':
-        specifier: ^3.12.1
-        version: 3.12.1(@kubb/react@3.12.1)
+        specifier: 3.13.1
+        version: 3.13.1(@kubb/react@3.12.1)
       '@repo/shared-api-spec':
         specifier: workspace:*
         version: link:../api-spec
@@ -268,31 +277,31 @@ importers:
         specifier: workspace:*
         version: link:../config-typescript
       '@types/node':
-        specifier: ^24.0.8
-        version: 24.0.8
+        specifier: 24.0.10
+        version: 24.0.10
       dotenv:
-        specifier: ^17.0.0
-        version: 17.0.0
+        specifier: 17.0.1
+        version: 17.0.1
       msw:
-        specifier: ^2.10.2
-        version: 2.10.2(@types/node@24.0.8)(typescript@5.8.3)
+        specifier: 2.10.2
+        version: 2.10.2(@types/node@24.0.10)(typescript@5.8.3)
 
   packages/shared/api-spec: {}
 
   packages/shared/api-type:
     devDependencies:
       '@kubb/cli':
-        specifier: ^3.12.1
-        version: 3.12.1(typescript@5.8.3)
+        specifier: 3.13.1
+        version: 3.13.1(typescript@5.8.3)
       '@kubb/core':
-        specifier: ^3.12.1
-        version: 3.12.1
+        specifier: 3.13.1
+        version: 3.13.1
       '@kubb/plugin-oas':
-        specifier: ^3.12.1
-        version: 3.12.1(@kubb/react@3.12.1)
+        specifier: 3.13.1
+        version: 3.13.1(@kubb/react@3.12.1)
       '@kubb/plugin-ts':
-        specifier: ^3.12.1
-        version: 3.12.1(@kubb/react@3.12.1)
+        specifier: 3.13.1
+        version: 3.13.1(@kubb/react@3.12.1)
       '@repo/shared-api-spec':
         specifier: workspace:*
         version: link:../api-spec
@@ -306,24 +315,24 @@ importers:
   packages/shared/api-zod:
     dependencies:
       zod:
-        specifier: ^3.25.67
+        specifier: 3.25.67
         version: 3.25.67
     devDependencies:
       '@kubb/cli':
-        specifier: ^3.12.1
-        version: 3.12.1(typescript@5.8.3)
+        specifier: 3.13.1
+        version: 3.13.1(typescript@5.8.3)
       '@kubb/core':
-        specifier: ^3.12.1
-        version: 3.12.1
+        specifier: 3.13.1
+        version: 3.13.1
       '@kubb/plugin-oas':
-        specifier: ^3.12.1
-        version: 3.12.1(@kubb/react@3.12.1)
+        specifier: 3.13.1
+        version: 3.13.1(@kubb/react@3.12.1)
       '@kubb/plugin-ts':
-        specifier: ^3.12.1
-        version: 3.12.1(@kubb/react@3.12.1)
+        specifier: 3.13.1
+        version: 3.13.1(@kubb/react@3.12.1)
       '@kubb/plugin-zod':
-        specifier: ^3.12.1
-        version: 3.12.1(@kubb/react@3.12.1)
+        specifier: 3.13.1
+        version: 3.13.1(@kubb/react@3.12.1)
       '@repo/shared-api-spec':
         specifier: workspace:*
         version: link:../api-spec
@@ -339,15 +348,17 @@ importers:
   packages/shared/config-commitlint:
     devDependencies:
       '@commitlint/config-conventional':
-        specifier: ^19.8.1
+        specifier: 19.8.1
         version: 19.8.1
       '@commitlint/types':
-        specifier: ^19.8.1
+        specifier: 19.8.1
         version: 19.8.1
 
   packages/shared/config-dependency-cruiser: {}
 
   packages/shared/config-kubb: {}
+
+  packages/shared/config-syncpack: {}
 
   packages/shared/config-tailwind: {}
 
@@ -356,70 +367,70 @@ importers:
   packages/shared/ui-layout-react-router:
     dependencies:
       '@radix-ui/react-slot':
-        specifier: ^1.2.3
-        version: 1.2.3(@types/react@19.1.0)(react@19.1.0)
+        specifier: 1.2.3
+        version: 1.2.3(@types/react@19.1.8)(react@19.1.0)
       react:
-        specifier: ^19.1.0
+        specifier: 19.1.0
         version: 19.1.0
       react-dom:
-        specifier: ^19.1.0
+        specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
       react-router:
-        specifier: ^7.6.3
+        specifier: 7.6.3
         version: 7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       tailwind-variants:
-        specifier: ^1.0.0
+        specifier: 1.0.0
         version: 1.0.0(tailwindcss@4.1.11)
     devDependencies:
       '@repo/shared-config-typescript':
         specifier: workspace:*
         version: link:../config-typescript
       '@types/node':
-        specifier: ^22.15.3
-        version: 22.15.34
+        specifier: 24.0.10
+        version: 24.0.10
       '@types/react':
-        specifier: 19.1.0
-        version: 19.1.0
+        specifier: '19'
+        version: 19.1.8
       '@types/react-dom':
-        specifier: 19.1.1
-        version: 19.1.1(@types/react@19.1.0)
+        specifier: '19'
+        version: 19.1.6(@types/react@19.1.8)
       typescript:
-        specifier: 5.8.2
-        version: 5.8.2
+        specifier: '5'
+        version: 5.8.3
 
   packages/shared/ui-partial-react-router:
     dependencies:
       '@radix-ui/react-slot':
-        specifier: ^1.2.3
-        version: 1.2.3(@types/react@19.1.0)(react@19.1.0)
+        specifier: 1.2.3
+        version: 1.2.3(@types/react@19.1.8)(react@19.1.0)
       react:
-        specifier: ^19.1.0
+        specifier: 19.1.0
         version: 19.1.0
       react-dom:
-        specifier: ^19.1.0
+        specifier: 19.1.0
         version: 19.1.0(react@19.1.0)
       react-router:
-        specifier: ^7.6.3
+        specifier: 7.6.3
         version: 7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       tailwind-variants:
-        specifier: ^1.0.0
+        specifier: 1.0.0
         version: 1.0.0(tailwindcss@4.1.11)
     devDependencies:
       '@repo/shared-config-typescript':
         specifier: workspace:*
         version: link:../config-typescript
       '@types/node':
-        specifier: ^22.15.3
-        version: 22.15.34
+        specifier: 24.0.10
+        version: 24.0.10
       '@types/react':
-        specifier: 19.1.0
-        version: 19.1.0
+        specifier: '19'
+        version: 19.1.8
       '@types/react-dom':
-        specifier: 19.1.1
-        version: 19.1.1(@types/react@19.1.0)
+        specifier: '19'
+        version: 19.1.6(@types/react@19.1.8)
       typescript:
-        specifier: 5.8.2
-        version: 5.8.2
+        specifier: '5'
+        version: 5.8.3
 
 packages:
 
@@ -871,12 +882,12 @@ packages:
   '@exodus/schemasafe@1.3.0':
     resolution: {integrity: sha512-5Aap/GaRupgNx/feGBwLLTVv8OQFfv3pq2lPRzPg9R+IOBnDgghTGW7l7EuVXOvg5cc/xSAlRW8rBrjIC3Nvqw==}
 
-  '@faker-js/faker@9.8.0':
-    resolution: {integrity: sha512-U9wpuSrJC93jZBxx/Qq2wPjCuYISBueyVUGK7qqdmj7r/nxaxwW8AQDCLeRO7wZnjj94sh3p246cAYjUKuqgfg==}
+  '@faker-js/faker@9.9.0':
+    resolution: {integrity: sha512-OEl393iCOoo/z8bMezRlJu+GlRGlsKbUAN7jKB6LhnKoqKve5DXRpalbItIIcwnCjs1k/FOPjFzcA6Qn+H+YbA==}
     engines: {node: '>=18.0.0', npm: '>=9.0.0'}
 
-  '@hono/node-server@1.14.4':
-    resolution: {integrity: sha512-DnxpshhYewr2q9ZN8ez/M5mmc3sucr8CT1sIgIy1bkeUXut9XWDkqHoFHRhWIQgkYnKpVRxunyhK7WzpJeJ6qQ==}
+  '@hono/node-server@1.15.0':
+    resolution: {integrity: sha512-MjmK4l5N4dQpZ9OSWN0tCj7ejuc7WvuWMzSKtc89bnknJykAeHxzRigXBTYZk85H6Awrii6RM59iUiUluApu2A==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
@@ -1083,8 +1094,8 @@ packages:
     peerDependencies:
       jsep: ^0.4.0||^1.0.0
 
-  '@kubb/cli@3.12.1':
-    resolution: {integrity: sha512-LMKiSwDqdQ9Dq+QeYicQd9tbM1e86wWD8CH1eBAhrR8nEXE0scvAfBpK6UfsHrh1U4QdHKfNhs9lBNJ7iNJZcg==}
+  '@kubb/cli@3.13.1':
+    resolution: {integrity: sha512-QzBLWbFP+e00uBw6AOmUy2XmHUK4Hwu10fpRYYFerPNEXPcCWkWoOxsfORFzlwUbZiFPJ0jK4keLNnd4C7wsdw==}
     engines: {node: '>=20'}
     hasBin: true
 
@@ -1092,16 +1103,24 @@ packages:
     resolution: {integrity: sha512-+rnqO2vkQmidWocGtFjOtzQIggN/XofUBbPqM0sy4teHavp474zVfslQzUJR9MlE6eS00JV56oNaykL5UCUtXg==}
     engines: {node: '>=20'}
 
-  '@kubb/oas@3.12.1':
-    resolution: {integrity: sha512-yu2A6gcKHvyqEkV8h/3uGe7YXork2Q4hQkl6HfxHjd8xjBWHSOIalE5+8RTRpUveVv1EuW7K7lI6biauwHPjWg==}
+  '@kubb/core@3.13.1':
+    resolution: {integrity: sha512-6F4Vb7GJW+otGn50tcRlQSKmcx94avi0dRZv2uJFd5LMFuGwgScaPJ9cxeBd6jtNsTt3okJ46D3xXYbubmgQ/g==}
+    engines: {node: '>=20'}
+
+  '@kubb/oas@3.13.1':
+    resolution: {integrity: sha512-/adRdqAzQV4u5BXj02vS5bGemfpp1cblZ9K44L4TH8jQDpCTIKvjsGz1DXpnRfn5P6UdfEAKvci4mTO9RWnpQA==}
     engines: {node: '>=20'}
 
   '@kubb/parser-ts@3.12.1':
     resolution: {integrity: sha512-Et6pXGzAVbUEhFbVRQfeuhKjPjvkt5vAcPOF/IFWd9zEM59w+3vVSyuS10TBDqhnkiUfjI1Y8hYt+4scFvdM3Q==}
     engines: {node: '>=20'}
 
-  '@kubb/plugin-client@3.12.1':
-    resolution: {integrity: sha512-uwJztsmIJIefzvcWX+VXjXX4mPr2ERZFI3iq7jdcy5qHP9+hpvt+fKuEJGLwhYXFuazkuHPXKVj8lbpmAqIA6A==}
+  '@kubb/parser-ts@3.13.1':
+    resolution: {integrity: sha512-FCO/xPR28RptOr9uUFyARx5FJtTwQ9q/20jljBGsssUmTY5syK5/IQhhKyEFMUl2AJSY5e1roQcnsuu7lq20Ww==}
+    engines: {node: '>=20'}
+
+  '@kubb/plugin-client@3.13.1':
+    resolution: {integrity: sha512-/hv72C3Ax0Q3kjVoCgjoFwn1scY8T/gJ+YBMzfyrP6zogQHf6k+ThlAf20/tQCWAEo41e5JEGtyoEVhPSv23AQ==}
     engines: {node: '>=20'}
     peerDependencies:
       '@kubb/react': ^3.0.0
@@ -1110,32 +1129,32 @@ packages:
       axios:
         optional: true
 
-  '@kubb/plugin-faker@3.12.1':
-    resolution: {integrity: sha512-zhv95zbaniqr9q1AeRKD63t1kCVjmuDXC25o5LhpqaT0V1TH/ncKv3nfbYVJUOgptPl1WfmMrf4GEncgCOCaiw==}
+  '@kubb/plugin-faker@3.13.1':
+    resolution: {integrity: sha512-DJZKmV/wcH1RbcJhfvc1BVOTCoqKIaoR8w1fBopg4VjxPRDDLDsqfdtf4XIlPMSJQuv/X+68f8VSm2kAwc8Qew==}
     engines: {node: '>=20'}
     peerDependencies:
       '@kubb/react': ^3.0.0
 
-  '@kubb/plugin-msw@3.12.1':
-    resolution: {integrity: sha512-u9kUkYHgSnub0KebKFTrPDirh5FL0LydOB9pYPuIvRnxHRWOJKzyP5bDIP58Jgv9DBt4fSOuj7QkjNFoZTu6sA==}
+  '@kubb/plugin-msw@3.13.1':
+    resolution: {integrity: sha512-KvMW2UlUroXAyFRkrdMLWd6Q4kLUfjWrTRAF8QZD9PW9/wBympr29mfaKDfmg8PnEciom/gniwBv1vTPX628Dw==}
     engines: {node: '>=20'}
     peerDependencies:
       '@kubb/react': ^3.0.0
 
-  '@kubb/plugin-oas@3.12.1':
-    resolution: {integrity: sha512-RJsFYtmy7bdsSwRgo5q1U+YDqArHc6FEg3T1o+13Xx7zlKgv4SkCsGo5BaHMZbyg6D3+a1FePhTbLFbpyWAo/Q==}
+  '@kubb/plugin-oas@3.13.1':
+    resolution: {integrity: sha512-JKxDHjym7sNkAUVT8SB0pIfKCDHS/2+6F3GA2INwNAP0rwoixaz4ce146a94zY7el0KlFh5Y2OcclXA2oNGDrg==}
     engines: {node: '>=20'}
     peerDependencies:
       '@kubb/react': ^3.0.0
 
-  '@kubb/plugin-ts@3.12.1':
-    resolution: {integrity: sha512-ZmT7FdOu+KhdwrLyHk2gdNoMgguPoNiofbQnfA0IYbYAdVI8zVQ5zkcdlDGoKEuNSDgQAHr7GA17T9K1103aNg==}
+  '@kubb/plugin-ts@3.13.1':
+    resolution: {integrity: sha512-BZYDnL38YC1uEB5G2Gm5Qps/TpzauKDiZWlTOQZJ1dvpUV7IW6h1MR9nYezwZmySaJ9UIR+eHS6jXVSQllpxhA==}
     engines: {node: '>=20'}
     peerDependencies:
       '@kubb/react': ^3.0.0
 
-  '@kubb/plugin-zod@3.12.1':
-    resolution: {integrity: sha512-3Y3oCo4FTEQDOUPD1/giKisoH10dXwZT1LIoNee0JDqdpyc8JXQ9SIPtom1yIAZ73yhrLGI1WCS2e7OMrPIhiQ==}
+  '@kubb/plugin-zod@3.13.1':
+    resolution: {integrity: sha512-TVya4Vo+hevSb5hvy8gRRyVNX9im2xM5nqMYVKjvvDhDOvfDAx5mH7ynMlaHAo9TmBMhq3A8x/LpdQaKj9oa+w==}
     engines: {node: '>=20'}
     peerDependencies:
       '@kubb/react': ^3.0.0
@@ -1144,8 +1163,8 @@ packages:
     resolution: {integrity: sha512-BQOBSmuwCv3oO9KlrYR1B6eubosrle2ox9jKVLugFqsACxXf8mm31+ebJ0H1Sd5j96GqL6nIOAPArQlXvcOSyQ==}
     engines: {node: '>=20'}
 
-  '@kubb/ui@3.12.1':
-    resolution: {integrity: sha512-BCZmEOXaEwTuuDveTknRhPDXNmbyYgEKWYFVtRsDEqzh3Jg6ScDBtjwaeE9ykQIEwL0PRjBzZozW2aqOvZyw4A==}
+  '@kubb/ui@3.13.1':
+    resolution: {integrity: sha512-DQiSpLo/uhcAfTChpGSYesWinjBO74VrVcixpZMIh8ByWeVQmc8ekwGoIGqINx/mZ4CHpvbCCT/X1NhZxa1Mxg==}
     engines: {node: '>=20'}
 
   '@mjackson/node-fetch-server@0.2.0':
@@ -1155,53 +1174,53 @@ packages:
     resolution: {integrity: sha512-RuzCup9Ct91Y7V79xwCb146RaBRHZ7NBbrIUySumd1rpKqHL5OonaqrGIbug5hNwP/fRyxFMA6ISgw4FTtYFYg==}
     engines: {node: '>=18'}
 
-  '@next/env@15.3.4':
-    resolution: {integrity: sha512-ZkdYzBseS6UjYzz6ylVKPOK+//zLWvD6Ta+vpoye8cW11AjiQjGYVibF0xuvT4L0iJfAPfZLFidaEzAOywyOAQ==}
+  '@next/env@15.4.0-canary.57':
+    resolution: {integrity: sha512-gDNgJA7YnuUWQ2Ei6oeMiuSSWWICyYGK0AbWQnOfub1LIyYPNXMSyvyLTkGwVyIixbLMUFdzjTgU+ZxYHil7Mg==}
 
-  '@next/swc-darwin-arm64@15.3.4':
-    resolution: {integrity: sha512-z0qIYTONmPRbwHWvpyrFXJd5F9YWLCsw3Sjrzj2ZvMYy9NPQMPZ1NjOJh4ojr4oQzcGYwgJKfidzehaNa1BpEg==}
+  '@next/swc-darwin-arm64@15.4.0':
+    resolution: {integrity: sha512-tUq3IBxdu1I+CfIQ7fOVHb5L0Ehu9lXmA3bcVVMDswnKnmL3V15LInWkFbQ/kuIDv87AT+UfJB4us+yJ1lNr/A==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@next/swc-darwin-x64@15.3.4':
-    resolution: {integrity: sha512-Z0FYJM8lritw5Wq+vpHYuCIzIlEMjewG2aRkc3Hi2rcbULknYL/xqfpBL23jQnCSrDUGAo/AEv0Z+s2bff9Zkw==}
+  '@next/swc-darwin-x64@15.4.0':
+    resolution: {integrity: sha512-zsFozes7iXAkfQYQGYi9xiDKrS7mjLCMl9DIZfm0cEmilYmJrO16rn04H4Y+NJZ5kBxJUXn+hAy4kXmToZYFHA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@next/swc-linux-arm64-gnu@15.3.4':
-    resolution: {integrity: sha512-l8ZQOCCg7adwmsnFm8m5q9eIPAHdaB2F3cxhufYtVo84pymwKuWfpYTKcUiFcutJdp9xGHC+F1Uq3xnFU1B/7g==}
+  '@next/swc-linux-arm64-gnu@15.4.0':
+    resolution: {integrity: sha512-z5S7BWDhBp+VJUzDEVpDasJC9EebZ1Jw8R25ryEH+ojLl14kMuoDtULOdin3f4zXBEwPvJrkt1G+Aes+TSX4iQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-arm64-musl@15.3.4':
-    resolution: {integrity: sha512-wFyZ7X470YJQtpKot4xCY3gpdn8lE9nTlldG07/kJYexCUpX1piX+MBfZdvulo+t1yADFVEuzFfVHfklfEx8kw==}
+  '@next/swc-linux-arm64-musl@15.4.0':
+    resolution: {integrity: sha512-VqN0D+CdUxMSO+a1EaIEJajMKlHbsSIObd1zYiNJ3d5vWO8eg9K/f+AtBm6F4zaRlSLTURKLoZ+f6aGIbzhXFA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-x64-gnu@15.3.4':
-    resolution: {integrity: sha512-gEbH9rv9o7I12qPyvZNVTyP/PWKqOp8clvnoYZQiX800KkqsaJZuOXkWgMa7ANCCh/oEN2ZQheh3yH8/kWPSEg==}
+  '@next/swc-linux-x64-gnu@15.4.0':
+    resolution: {integrity: sha512-iWQKV+kCeg0iSQR0tYm8I5K0w7YJnvy3HsdIlYHAhHYiqFEr/3JkKL3p1KduxRiaMj3dCv5ZuyZuCGV1le89ew==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-linux-x64-musl@15.3.4':
-    resolution: {integrity: sha512-Cf8sr0ufuC/nu/yQ76AnarbSAXcwG/wj+1xFPNbyNo8ltA6kw5d5YqO8kQuwVIxk13SBdtgXrNyom3ZosHAy4A==}
+  '@next/swc-linux-x64-musl@15.4.0':
+    resolution: {integrity: sha512-pm9t8LhfpNLtU5OjMny7OBjATRn3tiP+Kw4FQz/27XhgTmiwNbcqSAV4w+8TJ34e/X61xjj6vY32fsofxsQU5A==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-win32-arm64-msvc@15.3.4':
-    resolution: {integrity: sha512-ay5+qADDN3rwRbRpEhTOreOn1OyJIXS60tg9WMYTWCy3fB6rGoyjLVxc4dR9PYjEdR2iDYsaF5h03NA+XuYPQQ==}
+  '@next/swc-win32-arm64-msvc@15.4.0':
+    resolution: {integrity: sha512-yvx5Rj9Tb370IERMvHo9+gAxLQI6OIwmin0kELI8fvGYflaRz/cF1H2sk+a2y7WH3LY7RnKVRxoRLLVsch2WXQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@next/swc-win32-x64-msvc@15.3.4':
-    resolution: {integrity: sha512-4kDt31Bc9DGyYs41FTL1/kNpDeHyha2TC0j5sRRoKCyrhNcfZ/nRQkAUlF27mETwm8QyHqIjHJitfcza2Iykfg==}
+  '@next/swc-win32-x64-msvc@15.4.0':
+    resolution: {integrity: sha512-IldilrY7yfSlqOpTha7I7rYDDkyCC/KIMCjo2Nf0WqTLw3B5ha4islIF07YjNRbZS1Xl5WMqo9zZtx7VAE4epg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -1462,9 +1481,6 @@ packages:
     resolution: {integrity: sha512-JZlVFE6/dYpP9tQmV0/ADfn32L9uFarHWxfcRhReKUnljz1ZiUM5zpX+PH8h5CJs6lao3TuFqnPm9IJJCEkE2w==}
     engines: {node: '>=10.8'}
 
-  '@swc/counter@0.1.3':
-    resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
-
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
@@ -1573,27 +1589,13 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/node@20.19.2':
-    resolution: {integrity: sha512-9pLGGwdzOUBDYi0GNjM97FIA+f92fqSke6joWeBjWXllfNxZBs7qeMF7tvtOIsbY45xkWkxrdwUfUf3MnQa9gA==}
-
-  '@types/node@22.15.34':
-    resolution: {integrity: sha512-8Y6E5WUupYy1Dd0II32BsWAx5MWdcnRd8L84Oys3veg1YrYtNtzgO4CFhiBg6MDSjk7Ay36HYOnU7/tuOzIzcw==}
-
-  '@types/node@24.0.8':
-    resolution: {integrity: sha512-WytNrFSgWO/esSH9NbpWUfTMGQwCGIKfCmNlmFDNiI5gGhgMmEA+V1AEvKLeBNvvtBnailJtkrEa2OIISwrVAA==}
-
-  '@types/react-dom@19.1.1':
-    resolution: {integrity: sha512-jFf/woGTVTjUJsl2O7hcopJ1r0upqoq/vIOoCj0yLh3RIXxWcljlpuZ+vEBRXsymD1jhfeJrlyTy/S1UW+4y1w==}
-    peerDependencies:
-      '@types/react': ^19.0.0
+  '@types/node@24.0.10':
+    resolution: {integrity: sha512-ENHwaH+JIRTDIEEbDK6QSQntAYGtbvdDXnMXnZaZ6k13Du1dPMmprkEHIL7ok2Wl2aZevetwTAb5S+7yIF+enA==}
 
   '@types/react-dom@19.1.6':
     resolution: {integrity: sha512-4hOiT/dwO8Ko0gV1m/TJZYk3y0KBnY9vzDh7W+DH17b2HFSOGgdj33dhihPeuy3l0q23+4e+hoXHV6hCC4dCXw==}
     peerDependencies:
       '@types/react': ^19.0.0
-
-  '@types/react@19.1.0':
-    resolution: {integrity: sha512-UaicktuQI+9UKyA4njtDOGBD/67t8YEBt2xdfqu8+gP9hqPUPsiXlNPcpS2gVdjmis5GKPG3fCxbQLVgxsQZ8w==}
 
   '@types/react@19.1.8':
     resolution: {integrity: sha512-AwAfQ2Wa5bCx9WP8nZL2uMZWod7J7/JSplxbTmBQ5ms6QpqNYm672H0Vu9ZVKVngQ+ii4R/byguVEUZQyeg44g==}
@@ -1720,10 +1722,6 @@ packages:
   bundle-name@4.1.0:
     resolution: {integrity: sha512-tjwM5exMg6BGRI+kNmTntNsvdZS1X8BFYS6tnJ2hdH0kVxM6/eVZ2xy+FqStSWvYmtfFMDLIxurorHwDKfDz5Q==}
     engines: {node: '>=18'}
-
-  busboy@1.6.0:
-    resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
-    engines: {node: '>=10.16.0'}
 
   bytes@3.1.2:
     resolution: {integrity: sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg==}
@@ -1985,8 +1983,8 @@ packages:
     resolution: {integrity: sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==}
     engines: {node: '>=8'}
 
-  dotenv@17.0.0:
-    resolution: {integrity: sha512-A0BJ5lrpJVSfnMMXjmeO0xUnoxqsBHWCoqqTnGwGYVdnctqXXUEhJOO7LxmgxJon9tEZFGpe0xPRX0h2v3AANQ==}
+  dotenv@17.0.1:
+    resolution: {integrity: sha512-GLjkduuAL7IMJg/ZnOPm9AnWKJ82mSE2tzXLaJ/6hD6DhwGfZaXG77oB8qbReyiczNxnbxQKyh0OE5mXq0bAHA==}
     engines: {node: '>=12'}
 
   dunder-proto@1.0.1:
@@ -2783,9 +2781,10 @@ packages:
   next-tick@1.1.0:
     resolution: {integrity: sha512-CXdUiJembsNjuToQvxayPZF9Vqht7hewsvy2sOWafLvi2awflj9mOC6bHIg50orX8IJvWKY9wYQ/zB2kogPslQ==}
 
-  next@15.3.4:
-    resolution: {integrity: sha512-mHKd50C+mCjam/gcnwqL1T1vPx/XQNFlXqFIVdgQdVAFY9iIQtY0IfaVflEYzKiqjeA7B0cYYMaCrmAYFjs4rA==}
+  next@15.4.0:
+    resolution: {integrity: sha512-9JfEyg23carbb/AxUylRQh4zVN4dt1af9aJ+L3CFl/LKQIQkWUWN44YhB9M5JhxMjleF6rkfNOD7IqDcsb6zyQ==}
     engines: {node: ^18.18.0 || ^19.8.0 || >= 20.0.0}
+    deprecated: This version was published in error. Please use next@latest
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
@@ -3328,10 +3327,6 @@ packages:
     resolution: {integrity: sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==}
     engines: {node: '>= 0.8'}
 
-  streamsearch@1.1.0:
-    resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}
-    engines: {node: '>=10.0.0'}
-
   strict-event-emitter@0.5.1:
     resolution: {integrity: sha512-vMgjE/GGEPEFnhFub6pa4FmJBRBVOLpIII2hvCZ8Kzb7K0hlHo7mQv6xYrBvCL2LtAIBwFUK8wvuJgTVSQ5MFQ==}
 
@@ -3393,6 +3388,41 @@ packages:
 
   swagger2openapi@7.0.8:
     resolution: {integrity: sha512-upi/0ZGkYgEcLeGieoz8gT74oWHA0E7JivX7aN9mAf+Tc7BQoRBvnIGHoPDw+f9TXTW4s6kGYCZJtauP6OYp7g==}
+    hasBin: true
+
+  syncpack-darwin-arm64@14.0.0-alpha.17:
+    resolution: {integrity: sha512-vEBoIMjU/CeZr1cgrYOTM1MmrXe2qpnIp+NcsKGeytV4NRTlgP/BDz5ouxrmrI9JJx9TYLKbYHZgx9/FHsnHxw==}
+    cpu: [arm64]
+    os: [darwin]
+
+  syncpack-darwin-x64@14.0.0-alpha.17:
+    resolution: {integrity: sha512-F/EN3CfjRYaGQchn6HyJ0VlENwwRWR/l78ucIUAxlSeHYsecfpnLZBo4ezJ4hJ8NNncuCV3k1PYbZrk6W7c7NA==}
+    cpu: [x64]
+    os: [darwin]
+
+  syncpack-linux-arm64@14.0.0-alpha.17:
+    resolution: {integrity: sha512-1WSS/6N8MjNFbi8k4bYWvquYRDjV2Rp9aPGKoqh5HGahGnvfWnhyGJzFYHZeB7/H/C/yfYJUE66K2q4hJLLoaw==}
+    cpu: [arm64]
+    os: [linux]
+
+  syncpack-linux-x64@14.0.0-alpha.17:
+    resolution: {integrity: sha512-wBDcb24+ZXQM23r76Go7zGHrM/CGIkblDGXxgeywgby4sXIrH93sba6TFe7WldYgrBg9IjEPNrNxF+rsLD7HGQ==}
+    cpu: [x64]
+    os: [linux]
+
+  syncpack-windows-arm64@14.0.0-alpha.17:
+    resolution: {integrity: sha512-3dC3LzuYB/MzpDzkvnr/vBR/nSRmaxbFPhmxOBKWy1ypdukeMzF02UbFFmp4Ll16U8sjzcmcyJQSkG3EoNFK5Q==}
+    cpu: [arm64]
+    os: [win32]
+
+  syncpack-windows-x64@14.0.0-alpha.17:
+    resolution: {integrity: sha512-Z247l/eNBIzuohFNfG5QlgcQBZQaAoQ04+cmQWybRVSZgzkGepaXGEXVcOivnopp0WNPvfeL61gkIPUHn4QPSA==}
+    cpu: [x64]
+    os: [win32]
+
+  syncpack@14.0.0-alpha.17:
+    resolution: {integrity: sha512-0fzhFjeC5uofzlwHiZFs2YAE7oWuMXVS3x/C6PM80UgRtLa0YRuy8ViZleYJ8sBVQOBo+SRSe3aAm7YyJ2DMYA==}
+    engines: {node: '>=14.17.0'}
     hasBin: true
 
   tailwind-merge@3.0.2:
@@ -3538,18 +3568,10 @@ packages:
   type@2.7.3:
     resolution: {integrity: sha512-8j+1QmAbPvLZow5Qpi6NCaN8FB60p/6x8/vfNqOk/hC+HuvFZhL4+WfekuhQLiqFZXOgQdrs3B+XxEmCc6b3FQ==}
 
-  typescript@5.8.2:
-    resolution: {integrity: sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==}
-    engines: {node: '>=14.17'}
-    hasBin: true
-
   typescript@5.8.3:
     resolution: {integrity: sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==}
     engines: {node: '>=14.17'}
     hasBin: true
-
-  undici-types@6.21.0:
-    resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
 
   undici-types@7.8.0:
     resolution: {integrity: sha512-9UJ2xGDvQ43tYyVMpuHlsgApydB8ZKfVYTsLDhXkFL/6gfkp+U8xTGdh8pMJv1SpZna0zxG1DwsKZsreLbXBxw==}
@@ -3644,19 +3666,19 @@ packages:
       vite:
         optional: true
 
-  vite@6.3.5:
-    resolution: {integrity: sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==}
-    engines: {node: ^18.0.0 || ^20.0.0 || >=22.0.0}
+  vite@7.0.0:
+    resolution: {integrity: sha512-ixXJB1YRgDIw2OszKQS9WxGHKwLdCsbQNkpJN171udl6szi/rIySHL6/Os3s2+oE4P/FLD4dxg4mD7Wust+u5g==}
+    engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
-      '@types/node': ^18.0.0 || ^20.0.0 || >=22.0.0
+      '@types/node': ^20.19.0 || >=22.12.0
       jiti: '>=1.21.0'
-      less: '*'
+      less: ^4.0.0
       lightningcss: ^1.21.0
-      sass: '*'
-      sass-embedded: '*'
-      stylus: '*'
-      sugarss: '*'
+      sass: ^1.70.0
+      sass-embedded: ^1.70.0
+      stylus: '>=0.54.8'
+      sugarss: ^5.0.0
       terser: ^5.16.0
       tsx: ^4.8.1
       yaml: ^2.4.2
@@ -4048,11 +4070,11 @@ snapshots:
       '@types/tough-cookie': 4.0.5
       tough-cookie: 4.1.4
 
-  '@commitlint/cli@19.8.1(@types/node@24.0.8)(typescript@5.8.3)':
+  '@commitlint/cli@19.8.1(@types/node@24.0.10)(typescript@5.8.3)':
     dependencies:
       '@commitlint/format': 19.8.1
       '@commitlint/lint': 19.8.1
-      '@commitlint/load': 19.8.1(@types/node@24.0.8)(typescript@5.8.3)
+      '@commitlint/load': 19.8.1(@types/node@24.0.10)(typescript@5.8.3)
       '@commitlint/read': 19.8.1
       '@commitlint/types': 19.8.1
       tinyexec: 1.0.1
@@ -4099,7 +4121,7 @@ snapshots:
       '@commitlint/rules': 19.8.1
       '@commitlint/types': 19.8.1
 
-  '@commitlint/load@19.8.1(@types/node@24.0.8)(typescript@5.8.3)':
+  '@commitlint/load@19.8.1(@types/node@24.0.10)(typescript@5.8.3)':
     dependencies:
       '@commitlint/config-validator': 19.8.1
       '@commitlint/execute-rule': 19.8.1
@@ -4107,7 +4129,7 @@ snapshots:
       '@commitlint/types': 19.8.1
       chalk: 5.4.1
       cosmiconfig: 9.0.0(typescript@5.8.3)
-      cosmiconfig-typescript-loader: 6.1.0(@types/node@24.0.8)(cosmiconfig@9.0.0(typescript@5.8.3))(typescript@5.8.3)
+      cosmiconfig-typescript-loader: 6.1.0(@types/node@24.0.10)(cosmiconfig@9.0.0(typescript@5.8.3))(typescript@5.8.3)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -4123,19 +4145,19 @@ snapshots:
       conventional-changelog-angular: 7.0.0
       conventional-commits-parser: 5.0.0
 
-  '@commitlint/prompt-cli@19.8.1(@types/node@24.0.8)(typescript@5.8.3)':
+  '@commitlint/prompt-cli@19.8.1(@types/node@24.0.10)(typescript@5.8.3)':
     dependencies:
-      '@commitlint/prompt': 19.8.1(@types/node@24.0.8)(typescript@5.8.3)
+      '@commitlint/prompt': 19.8.1(@types/node@24.0.10)(typescript@5.8.3)
       inquirer: 9.3.7
       tinyexec: 1.0.1
     transitivePeerDependencies:
       - '@types/node'
       - typescript
 
-  '@commitlint/prompt@19.8.1(@types/node@24.0.8)(typescript@5.8.3)':
+  '@commitlint/prompt@19.8.1(@types/node@24.0.10)(typescript@5.8.3)':
     dependencies:
       '@commitlint/ensure': 19.8.1
-      '@commitlint/load': 19.8.1(@types/node@24.0.8)(typescript@5.8.3)
+      '@commitlint/load': 19.8.1(@types/node@24.0.10)(typescript@5.8.3)
       '@commitlint/types': 19.8.1
       chalk: 5.4.1
       inquirer: 9.3.7
@@ -4260,9 +4282,9 @@ snapshots:
 
   '@exodus/schemasafe@1.3.0': {}
 
-  '@faker-js/faker@9.8.0': {}
+  '@faker-js/faker@9.9.0': {}
 
-  '@hono/node-server@1.14.4(hono@4.8.3)':
+  '@hono/node-server@1.15.0(hono@4.8.3)':
     dependencies:
       hono: 4.8.3
 
@@ -4361,24 +4383,17 @@ snapshots:
   '@img/sharp-win32-x64@0.34.2':
     optional: true
 
-  '@inquirer/confirm@5.1.12(@types/node@20.19.2)':
+  '@inquirer/confirm@5.1.12(@types/node@24.0.10)':
     dependencies:
-      '@inquirer/core': 10.1.13(@types/node@20.19.2)
-      '@inquirer/type': 3.0.7(@types/node@20.19.2)
+      '@inquirer/core': 10.1.13(@types/node@24.0.10)
+      '@inquirer/type': 3.0.7(@types/node@24.0.10)
     optionalDependencies:
-      '@types/node': 20.19.2
+      '@types/node': 24.0.10
 
-  '@inquirer/confirm@5.1.12(@types/node@24.0.8)':
-    dependencies:
-      '@inquirer/core': 10.1.13(@types/node@24.0.8)
-      '@inquirer/type': 3.0.7(@types/node@24.0.8)
-    optionalDependencies:
-      '@types/node': 24.0.8
-
-  '@inquirer/core@10.1.13(@types/node@20.19.2)':
+  '@inquirer/core@10.1.13(@types/node@24.0.10)':
     dependencies:
       '@inquirer/figures': 1.0.12
-      '@inquirer/type': 3.0.7(@types/node@20.19.2)
+      '@inquirer/type': 3.0.7(@types/node@24.0.10)
       ansi-escapes: 4.3.2
       cli-width: 4.1.0
       mute-stream: 2.0.0
@@ -4386,30 +4401,13 @@ snapshots:
       wrap-ansi: 6.2.0
       yoctocolors-cjs: 2.1.2
     optionalDependencies:
-      '@types/node': 20.19.2
-
-  '@inquirer/core@10.1.13(@types/node@24.0.8)':
-    dependencies:
-      '@inquirer/figures': 1.0.12
-      '@inquirer/type': 3.0.7(@types/node@24.0.8)
-      ansi-escapes: 4.3.2
-      cli-width: 4.1.0
-      mute-stream: 2.0.0
-      signal-exit: 4.1.0
-      wrap-ansi: 6.2.0
-      yoctocolors-cjs: 2.1.2
-    optionalDependencies:
-      '@types/node': 24.0.8
+      '@types/node': 24.0.10
 
   '@inquirer/figures@1.0.12': {}
 
-  '@inquirer/type@3.0.7(@types/node@20.19.2)':
+  '@inquirer/type@3.0.7(@types/node@24.0.10)':
     optionalDependencies:
-      '@types/node': 20.19.2
-
-  '@inquirer/type@3.0.7(@types/node@24.0.8)':
-    optionalDependencies:
-      '@types/node': 24.0.8
+      '@types/node': 24.0.10
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -4449,10 +4447,10 @@ snapshots:
     dependencies:
       jsep: 1.4.0
 
-  '@kubb/cli@3.12.1(typescript@5.8.3)':
+  '@kubb/cli@3.13.1(typescript@5.8.3)':
     dependencies:
-      '@kubb/core': 3.12.1
-      '@kubb/ui': 3.12.1
+      '@kubb/core': 3.13.1
+      '@kubb/ui': 3.13.1
       chokidar: 4.0.3
       citty: 0.1.6
       cli-progress: 3.12.0
@@ -4483,7 +4481,21 @@ snapshots:
       seedrandom: 3.0.5
       semver: 7.7.2
 
-  '@kubb/oas@3.12.1':
+  '@kubb/core@3.13.1':
+    dependencies:
+      '@kubb/parser-ts': 3.13.1
+      camelcase: 8.0.0
+      find-up: 7.0.0
+      fs-extra: 11.3.0
+      js-runtime: 0.0.8
+      natural-orderby: 5.0.0
+      object-hash: 3.0.0
+      p-queue: 8.1.0
+      remeda: 2.23.2
+      seedrandom: 3.0.5
+      semver: 7.7.2
+
+  '@kubb/oas@3.13.1':
     dependencies:
       '@redocly/openapi-core': 1.34.3
       hotscript: 1.0.13
@@ -4505,45 +4517,51 @@ snapshots:
       remeda: 2.23.2
       typescript: 5.8.3
 
-  '@kubb/plugin-client@3.12.1(@kubb/react@3.12.1)':
+  '@kubb/parser-ts@3.13.1':
     dependencies:
-      '@kubb/core': 3.12.1
-      '@kubb/oas': 3.12.1
-      '@kubb/plugin-oas': 3.12.1(@kubb/react@3.12.1)
-      '@kubb/plugin-ts': 3.12.1(@kubb/react@3.12.1)
-      '@kubb/plugin-zod': 3.12.1(@kubb/react@3.12.1)
+      prettier: 3.6.2
+      remeda: 2.23.2
+      typescript: 5.8.3
+
+  '@kubb/plugin-client@3.13.1(@kubb/react@3.12.1)':
+    dependencies:
+      '@kubb/core': 3.13.1
+      '@kubb/oas': 3.13.1
+      '@kubb/plugin-oas': 3.13.1(@kubb/react@3.12.1)
+      '@kubb/plugin-ts': 3.13.1(@kubb/react@3.12.1)
+      '@kubb/plugin-zod': 3.13.1(@kubb/react@3.12.1)
       '@kubb/react': 3.12.1
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@kubb/plugin-faker@3.12.1(@kubb/react@3.12.1)':
+  '@kubb/plugin-faker@3.13.1(@kubb/react@3.12.1)':
     dependencies:
-      '@kubb/core': 3.12.1
-      '@kubb/oas': 3.12.1
-      '@kubb/plugin-oas': 3.12.1(@kubb/react@3.12.1)
-      '@kubb/plugin-ts': 3.12.1(@kubb/react@3.12.1)
+      '@kubb/core': 3.13.1
+      '@kubb/oas': 3.13.1
+      '@kubb/plugin-oas': 3.13.1(@kubb/react@3.12.1)
+      '@kubb/plugin-ts': 3.13.1(@kubb/react@3.12.1)
       '@kubb/react': 3.12.1
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@kubb/plugin-msw@3.12.1(@kubb/react@3.12.1)':
+  '@kubb/plugin-msw@3.13.1(@kubb/react@3.12.1)':
     dependencies:
-      '@kubb/core': 3.12.1
-      '@kubb/oas': 3.12.1
-      '@kubb/plugin-faker': 3.12.1(@kubb/react@3.12.1)
-      '@kubb/plugin-oas': 3.12.1(@kubb/react@3.12.1)
-      '@kubb/plugin-ts': 3.12.1(@kubb/react@3.12.1)
+      '@kubb/core': 3.13.1
+      '@kubb/oas': 3.13.1
+      '@kubb/plugin-faker': 3.13.1(@kubb/react@3.12.1)
+      '@kubb/plugin-oas': 3.13.1(@kubb/react@3.12.1)
+      '@kubb/plugin-ts': 3.13.1(@kubb/react@3.12.1)
       '@kubb/react': 3.12.1
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@kubb/plugin-oas@3.12.1(@kubb/react@3.12.1)':
+  '@kubb/plugin-oas@3.13.1(@kubb/react@3.12.1)':
     dependencies:
-      '@kubb/core': 3.12.1
-      '@kubb/oas': 3.12.1
+      '@kubb/core': 3.13.1
+      '@kubb/oas': 3.13.1
       '@kubb/react': 3.12.1
       '@stoplight/yaml': 4.3.0
       remeda: 2.23.2
@@ -4551,24 +4569,24 @@ snapshots:
       - encoding
       - supports-color
 
-  '@kubb/plugin-ts@3.12.1(@kubb/react@3.12.1)':
+  '@kubb/plugin-ts@3.13.1(@kubb/react@3.12.1)':
     dependencies:
-      '@kubb/core': 3.12.1
-      '@kubb/oas': 3.12.1
-      '@kubb/parser-ts': 3.12.1
-      '@kubb/plugin-oas': 3.12.1(@kubb/react@3.12.1)
+      '@kubb/core': 3.13.1
+      '@kubb/oas': 3.13.1
+      '@kubb/parser-ts': 3.13.1
+      '@kubb/plugin-oas': 3.13.1(@kubb/react@3.12.1)
       '@kubb/react': 3.12.1
     transitivePeerDependencies:
       - encoding
       - supports-color
 
-  '@kubb/plugin-zod@3.12.1(@kubb/react@3.12.1)':
+  '@kubb/plugin-zod@3.13.1(@kubb/react@3.12.1)':
     dependencies:
-      '@kubb/core': 3.12.1
-      '@kubb/oas': 3.12.1
-      '@kubb/parser-ts': 3.12.1
-      '@kubb/plugin-oas': 3.12.1(@kubb/react@3.12.1)
-      '@kubb/plugin-ts': 3.12.1(@kubb/react@3.12.1)
+      '@kubb/core': 3.13.1
+      '@kubb/oas': 3.13.1
+      '@kubb/parser-ts': 3.13.1
+      '@kubb/plugin-oas': 3.13.1(@kubb/react@3.12.1)
+      '@kubb/plugin-ts': 3.13.1(@kubb/react@3.12.1)
       '@kubb/react': 3.12.1
     transitivePeerDependencies:
       - encoding
@@ -4589,9 +4607,9 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@kubb/ui@3.12.1':
+  '@kubb/ui@3.13.1':
     dependencies:
-      '@hono/node-server': 1.14.4(hono@4.8.3)
+      '@hono/node-server': 1.15.0(hono@4.8.3)
       '@hono/zod-openapi': 0.19.2(hono@4.8.3)(zod@3.25.67)
       hono: 4.8.3
       zod: 3.25.67
@@ -4607,30 +4625,30 @@ snapshots:
       outvariant: 1.4.3
       strict-event-emitter: 0.5.1
 
-  '@next/env@15.3.4': {}
+  '@next/env@15.4.0-canary.57': {}
 
-  '@next/swc-darwin-arm64@15.3.4':
+  '@next/swc-darwin-arm64@15.4.0':
     optional: true
 
-  '@next/swc-darwin-x64@15.3.4':
+  '@next/swc-darwin-x64@15.4.0':
     optional: true
 
-  '@next/swc-linux-arm64-gnu@15.3.4':
+  '@next/swc-linux-arm64-gnu@15.4.0':
     optional: true
 
-  '@next/swc-linux-arm64-musl@15.3.4':
+  '@next/swc-linux-arm64-musl@15.4.0':
     optional: true
 
-  '@next/swc-linux-x64-gnu@15.3.4':
+  '@next/swc-linux-x64-gnu@15.4.0':
     optional: true
 
-  '@next/swc-linux-x64-musl@15.3.4':
+  '@next/swc-linux-x64-musl@15.4.0':
     optional: true
 
-  '@next/swc-win32-arm64-msvc@15.3.4':
+  '@next/swc-win32-arm64-msvc@15.4.0':
     optional: true
 
-  '@next/swc-win32-x64-msvc@15.3.4':
+  '@next/swc-win32-x64-msvc@15.4.0':
     optional: true
 
   '@npmcli/git@4.1.0':
@@ -4686,20 +4704,20 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@radix-ui/react-compose-refs@1.1.2(@types/react@19.1.0)(react@19.1.0)':
+  '@radix-ui/react-compose-refs@1.1.2(@types/react@19.1.8)(react@19.1.0)':
     dependencies:
       react: 19.1.0
     optionalDependencies:
-      '@types/react': 19.1.0
+      '@types/react': 19.1.8
 
-  '@radix-ui/react-slot@1.2.3(@types/react@19.1.0)(react@19.1.0)':
+  '@radix-ui/react-slot@1.2.3(@types/react@19.1.8)(react@19.1.0)':
     dependencies:
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.1.0)(react@19.1.0)
+      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.1.8)(react@19.1.0)
       react: 19.1.0
     optionalDependencies:
-      '@types/react': 19.1.0
+      '@types/react': 19.1.8
 
-  '@react-router/dev@7.6.3(@react-router/serve@7.6.3(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3))(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(tsx@4.20.3)(typescript@5.8.3)(vite@6.3.5(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0))(yaml@2.8.0)':
+  '@react-router/dev@7.6.3(@react-router/serve@7.6.3(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3))(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(tsx@4.20.3)(typescript@5.8.3)(vite@7.0.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0))(yaml@2.8.0)':
     dependencies:
       '@babel/core': 7.27.7
       '@babel/generator': 7.27.5
@@ -4728,8 +4746,8 @@ snapshots:
       set-cookie-parser: 2.7.1
       tinyglobby: 0.2.14
       valibot: 0.41.0(typescript@5.8.3)
-      vite: 6.3.5(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)
-      vite-node: 3.2.4(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)
+      vite: 7.0.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)
+      vite-node: 3.2.4(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)
     optionalDependencies:
       '@react-router/serve': 7.6.3(react-router@7.6.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(typescript@5.8.3)
       typescript: 5.8.3
@@ -4914,8 +4932,6 @@ snapshots:
       '@stoplight/yaml-ast-parser': 0.0.50
       tslib: 2.8.1
 
-  '@swc/counter@0.1.3': {}
-
   '@swc/helpers@0.5.15':
     dependencies:
       tslib: 2.8.1
@@ -4992,16 +5008,16 @@ snapshots:
       postcss: 8.5.6
       tailwindcss: 4.1.11
 
-  '@tailwindcss/vite@4.1.11(vite@6.3.5(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0))':
+  '@tailwindcss/vite@4.1.11(vite@7.0.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0))':
     dependencies:
       '@tailwindcss/node': 4.1.11
       '@tailwindcss/oxide': 4.1.11
       tailwindcss: 4.1.11
-      vite: 6.3.5(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)
+      vite: 7.0.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)
 
   '@types/conventional-commits-parser@5.0.1':
     dependencies:
-      '@types/node': 24.0.8
+      '@types/node': 24.0.10
 
   '@types/cookie@0.6.0': {}
 
@@ -5009,29 +5025,13 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/node@20.19.2':
-    dependencies:
-      undici-types: 6.21.0
-
-  '@types/node@22.15.34':
-    dependencies:
-      undici-types: 6.21.0
-
-  '@types/node@24.0.8':
+  '@types/node@24.0.10':
     dependencies:
       undici-types: 7.8.0
-
-  '@types/react-dom@19.1.1(@types/react@19.1.0)':
-    dependencies:
-      '@types/react': 19.1.0
 
   '@types/react-dom@19.1.6(@types/react@19.1.8)':
     dependencies:
       '@types/react': 19.1.8
-
-  '@types/react@19.1.0':
-    dependencies:
-      csstype: 3.1.3
 
   '@types/react@19.1.8':
     dependencies:
@@ -5165,10 +5165,6 @@ snapshots:
   bundle-name@4.1.0:
     dependencies:
       run-applescript: 7.0.0
-
-  busboy@1.6.0:
-    dependencies:
-      streamsearch: 1.1.0
 
   bytes@3.1.2: {}
 
@@ -5327,9 +5323,9 @@ snapshots:
 
   cookie@1.0.2: {}
 
-  cosmiconfig-typescript-loader@6.1.0(@types/node@24.0.8)(cosmiconfig@9.0.0(typescript@5.8.3))(typescript@5.8.3):
+  cosmiconfig-typescript-loader@6.1.0(@types/node@24.0.10)(cosmiconfig@9.0.0(typescript@5.8.3))(typescript@5.8.3):
     dependencies:
-      '@types/node': 24.0.8
+      '@types/node': 24.0.10
       cosmiconfig: 9.0.0(typescript@5.8.3)
       jiti: 2.4.2
       typescript: 5.8.3
@@ -5418,7 +5414,7 @@ snapshots:
     dependencies:
       is-obj: 2.0.0
 
-  dotenv@17.0.0: {}
+  dotenv@17.0.1: {}
 
   dunder-proto@1.0.1:
     dependencies:
@@ -5685,7 +5681,6 @@ snapshots:
   get-tsconfig@4.10.1:
     dependencies:
       resolve-pkg-maps: 1.0.0
-    optional: true
 
   git-raw-commits@4.0.0:
     dependencies:
@@ -6133,37 +6128,12 @@ snapshots:
 
   ms@2.1.3: {}
 
-  msw@2.10.2(@types/node@20.19.2)(typescript@5.8.3):
+  msw@2.10.2(@types/node@24.0.10)(typescript@5.8.3):
     dependencies:
       '@bundled-es-modules/cookie': 2.0.1
       '@bundled-es-modules/statuses': 1.0.1
       '@bundled-es-modules/tough-cookie': 0.1.6
-      '@inquirer/confirm': 5.1.12(@types/node@20.19.2)
-      '@mswjs/interceptors': 0.39.2
-      '@open-draft/deferred-promise': 2.2.0
-      '@open-draft/until': 2.1.0
-      '@types/cookie': 0.6.0
-      '@types/statuses': 2.0.6
-      graphql: 16.11.0
-      headers-polyfill: 4.0.3
-      is-node-process: 1.2.0
-      outvariant: 1.4.3
-      path-to-regexp: 6.3.0
-      picocolors: 1.1.1
-      strict-event-emitter: 0.5.1
-      type-fest: 4.41.0
-      yargs: 17.7.2
-    optionalDependencies:
-      typescript: 5.8.3
-    transitivePeerDependencies:
-      - '@types/node'
-
-  msw@2.10.2(@types/node@24.0.8)(typescript@5.8.3):
-    dependencies:
-      '@bundled-es-modules/cookie': 2.0.1
-      '@bundled-es-modules/statuses': 1.0.1
-      '@bundled-es-modules/tough-cookie': 0.1.6
-      '@inquirer/confirm': 5.1.12(@types/node@24.0.8)
+      '@inquirer/confirm': 5.1.12(@types/node@24.0.10)
       '@mswjs/interceptors': 0.39.2
       '@open-draft/deferred-promise': 2.2.0
       '@open-draft/until': 2.1.0
@@ -6199,26 +6169,24 @@ snapshots:
 
   next-tick@1.1.0: {}
 
-  next@15.3.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+  next@15.4.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
-      '@next/env': 15.3.4
-      '@swc/counter': 0.1.3
+      '@next/env': 15.4.0-canary.57
       '@swc/helpers': 0.5.15
-      busboy: 1.6.0
       caniuse-lite: 1.0.30001726
       postcss: 8.4.31
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       styled-jsx: 5.1.6(react@19.1.0)
     optionalDependencies:
-      '@next/swc-darwin-arm64': 15.3.4
-      '@next/swc-darwin-x64': 15.3.4
-      '@next/swc-linux-arm64-gnu': 15.3.4
-      '@next/swc-linux-arm64-musl': 15.3.4
-      '@next/swc-linux-x64-gnu': 15.3.4
-      '@next/swc-linux-x64-musl': 15.3.4
-      '@next/swc-win32-arm64-msvc': 15.3.4
-      '@next/swc-win32-x64-msvc': 15.3.4
+      '@next/swc-darwin-arm64': 15.4.0
+      '@next/swc-darwin-x64': 15.4.0
+      '@next/swc-linux-arm64-gnu': 15.4.0
+      '@next/swc-linux-arm64-musl': 15.4.0
+      '@next/swc-linux-x64-gnu': 15.4.0
+      '@next/swc-linux-x64-musl': 15.4.0
+      '@next/swc-win32-arm64-msvc': 15.4.0
+      '@next/swc-win32-x64-msvc': 15.4.0
       sharp: 0.34.2
     transitivePeerDependencies:
       - '@babel/core'
@@ -6577,8 +6545,7 @@ snapshots:
 
   resolve-from@5.0.0: {}
 
-  resolve-pkg-maps@1.0.0:
-    optional: true
+  resolve-pkg-maps@1.0.0: {}
 
   resolve@1.22.10:
     dependencies:
@@ -6805,8 +6772,6 @@ snapshots:
 
   statuses@2.0.1: {}
 
-  streamsearch@1.1.0: {}
-
   strict-event-emitter@0.5.1: {}
 
   string-argv@0.3.2: {}
@@ -6867,6 +6832,35 @@ snapshots:
       yargs: 17.7.2
     transitivePeerDependencies:
       - encoding
+
+  syncpack-darwin-arm64@14.0.0-alpha.17:
+    optional: true
+
+  syncpack-darwin-x64@14.0.0-alpha.17:
+    optional: true
+
+  syncpack-linux-arm64@14.0.0-alpha.17:
+    optional: true
+
+  syncpack-linux-x64@14.0.0-alpha.17:
+    optional: true
+
+  syncpack-windows-arm64@14.0.0-alpha.17:
+    optional: true
+
+  syncpack-windows-x64@14.0.0-alpha.17:
+    optional: true
+
+  syncpack@14.0.0-alpha.17:
+    dependencies:
+      tsx: 4.20.3
+    optionalDependencies:
+      syncpack-darwin-arm64: 14.0.0-alpha.17
+      syncpack-darwin-x64: 14.0.0-alpha.17
+      syncpack-linux-arm64: 14.0.0-alpha.17
+      syncpack-linux-x64: 14.0.0-alpha.17
+      syncpack-windows-arm64: 14.0.0-alpha.17
+      syncpack-windows-x64: 14.0.0-alpha.17
 
   tailwind-merge@3.0.2: {}
 
@@ -6957,7 +6951,6 @@ snapshots:
       get-tsconfig: 4.10.1
     optionalDependencies:
       fsevents: 2.3.3
-    optional: true
 
   turbo-darwin-64@2.5.4:
     optional: true
@@ -6997,11 +6990,7 @@ snapshots:
 
   type@2.7.3: {}
 
-  typescript@5.8.2: {}
-
   typescript@5.8.3: {}
-
-  undici-types@6.21.0: {}
 
   undici-types@7.8.0: {}
 
@@ -7062,13 +7051,13 @@ snapshots:
 
   vary@1.1.2: {}
 
-  vite-node@3.2.4(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0):
+  vite-node@3.2.4(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0):
     dependencies:
       cac: 6.7.14
       debug: 4.4.1
       es-module-lexer: 1.7.0
       pathe: 2.0.3
-      vite: 6.3.5(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)
+      vite: 7.0.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -7083,18 +7072,18 @@ snapshots:
       - tsx
       - yaml
 
-  vite-tsconfig-paths@5.1.4(typescript@5.8.3)(vite@6.3.5(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)):
+  vite-tsconfig-paths@5.1.4(typescript@5.8.3)(vite@7.0.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)):
     dependencies:
       debug: 4.4.1
       globrex: 0.1.2
       tsconfck: 3.1.6(typescript@5.8.3)
     optionalDependencies:
-      vite: 6.3.5(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)
+      vite: 7.0.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@6.3.5(@types/node@20.19.2)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0):
+  vite@7.0.0(@types/node@24.0.10)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)(yaml@2.8.0):
     dependencies:
       esbuild: 0.25.5
       fdir: 6.4.6(picomatch@4.0.2)
@@ -7103,7 +7092,7 @@ snapshots:
       rollup: 4.44.1
       tinyglobby: 0.2.14
     optionalDependencies:
-      '@types/node': 20.19.2
+      '@types/node': 24.0.10
       fsevents: 2.3.3
       jiti: 2.4.2
       lightningcss: 1.30.1
