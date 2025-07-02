@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+@source "../../../packages/shared/ui-layout-react-router/src";
+@source "../../../packages/shared/ui-partial-react-router/src";
+
 @import "@repo/shared-config-tailwind/styles/utilities.css";
 
 @import "@repo/shared-config-tailwind/styles/theme.css" layer(theme);
