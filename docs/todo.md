@@ -181,10 +181,10 @@
 
 ### UI/UX改善
 
-- [ ] **Tailwind CSS導入**
+- [x] **Tailwind CSS導入**
   - [x] packages/shared/config-tailwind パッケージ作成
   - [x] デザインシステム統一
-  - [ ] 既存コンポーネントの移行
+  - [x] 既存コンポーネントの移行
 
 - [ ] **追加UIコンポーネント**
   - [ ] Form コンポーネント群

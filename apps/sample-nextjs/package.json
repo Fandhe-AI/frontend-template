@@ -21,6 +21,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@tailwindcss/postcss": "^4",
+    "tailwind-variants": "^1.0.0",
     "typescript": "^5",
     "tailwindcss": "^4"
   }
