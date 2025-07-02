@@ -8,6 +8,12 @@ pre-commit:
     lint:
       run: pnpm run lint
       stage_fixed: true
+    package:format:
+      run: pnpm run package:format:check
+      stage_fixed: true
+    package:lint:
+      run: pnpm run package:lint
+      stage_fixed: true
 
 commit-msg:
   commands:

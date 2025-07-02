@@ -156,7 +156,7 @@
   - [x] commit message規約
 
 - [ ] **依存関係管理**
-  - [ ] .syncpackrc.yml作成
+  - [x] .syncpackrc.yml作成
   - [ ] renovate.json設定（dependabot代替）
   - [ ] 定期的な依存関係更新
   - [ ] Dependency cruiserレポートの定期生成
