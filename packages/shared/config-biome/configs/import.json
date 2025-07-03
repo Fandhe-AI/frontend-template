@@ -13,6 +13,8 @@
               ":BLANK_LINE:",
               [":PACKAGE:", ":PACKAGE_WITH_PROTOCOL:"],
               ":BLANK_LINE:",
+              "@repo/**",
+              ":BLANK_LINE:",
               ":ALIAS:",
               ":BLANK_LINE:",
               ":PATH:"
