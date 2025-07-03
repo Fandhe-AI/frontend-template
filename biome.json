@@ -2,6 +2,8 @@
   "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
   "extends": [
     "@repo/shared-config-biome/configs/core",
-    "@repo/shared-config-biome/configs/root"
+    "@repo/shared-config-biome/configs/root",
+    "@repo/shared-config-biome/configs/tailwind",
+    "@repo/shared-config-biome/configs/import"
   ]
 }

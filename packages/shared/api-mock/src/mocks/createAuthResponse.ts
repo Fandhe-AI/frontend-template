@@ -4,6 +4,7 @@
  */
 
 import { faker } from "@faker-js/faker";
+
 import type { AuthResponse } from "../types/AuthResponse";
 import { createUser } from "./createUser";
 

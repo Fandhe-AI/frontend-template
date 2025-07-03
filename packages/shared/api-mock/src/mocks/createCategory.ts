@@ -4,6 +4,7 @@
  */
 
 import { faker } from "@faker-js/faker";
+
 import type { Category } from "../types/Category";
 
 /**

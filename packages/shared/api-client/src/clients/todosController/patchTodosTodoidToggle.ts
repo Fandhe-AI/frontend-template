@@ -8,6 +8,7 @@ import type {
   ResponseErrorConfig,
 } from "@kubb/plugin-client/clients/fetch";
 import client from "@kubb/plugin-client/clients/fetch";
+
 import type {
   PatchTodosTodoidToggle401,
   PatchTodosTodoidToggle404,

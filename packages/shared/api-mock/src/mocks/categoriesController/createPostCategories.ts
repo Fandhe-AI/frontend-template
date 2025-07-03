@@ -4,6 +4,7 @@
  */
 
 import { faker } from "@faker-js/faker";
+
 import type {
   PostCategories201,
   PostCategories400,

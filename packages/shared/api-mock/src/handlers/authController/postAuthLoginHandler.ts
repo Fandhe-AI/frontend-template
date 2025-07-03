@@ -4,6 +4,7 @@
  */
 
 import { http } from "msw";
+
 import { createPostAuthLoginMutationResponse } from "../../mocks/authController/createPostAuthLogin";
 import type { PostAuthLoginMutationResponse } from "../../types/authController/PostAuthLogin";
 

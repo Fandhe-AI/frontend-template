@@ -4,6 +4,7 @@
  */
 
 import { http } from "msw";
+
 import { createGetCategoriesQueryResponse } from "../../mocks/categoriesController/createGetCategories";
 import type { GetCategoriesQueryResponse } from "../../types/categoriesController/GetCategories";
 
