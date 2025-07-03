@@ -4,6 +4,7 @@
  */
 
 import { faker } from "@faker-js/faker";
+
 import type {
   GetCategories200,
   GetCategories401,

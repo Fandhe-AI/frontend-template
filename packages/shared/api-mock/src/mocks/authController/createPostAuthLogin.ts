@@ -4,6 +4,7 @@
  */
 
 import { faker } from "@faker-js/faker";
+
 import type {
   PostAuthLogin200,
   PostAuthLogin400,

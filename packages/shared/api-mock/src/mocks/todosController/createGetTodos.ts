@@ -4,6 +4,7 @@
  */
 
 import { faker } from "@faker-js/faker";
+
 import type {
   GetTodos200,
   GetTodos400,
