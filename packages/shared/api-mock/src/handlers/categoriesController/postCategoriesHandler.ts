@@ -4,6 +4,7 @@
  */
 
 import { http } from "msw";
+
 import { createPostCategoriesMutationResponse } from "../../mocks/categoriesController/createPostCategories";
 import type { PostCategoriesMutationResponse } from "../../types/categoriesController/PostCategories";
 

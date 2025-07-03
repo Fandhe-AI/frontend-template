@@ -4,6 +4,7 @@
  */
 
 import { faker } from "@faker-js/faker";
+
 import type {
   PatchTodosTodoidToggle200,
   PatchTodosTodoidToggle401,
