@@ -5,6 +5,8 @@
     "clean": true,
     "extension": {
       ".ts": ""
-    }
+    },
+    "barrelType": false,
+    "defaultBanner": false
   }
 }

@@ -1,16 +1,19 @@
 import * as Slot from "@radix-ui/react-slot";
-import type { ButtonHTMLAttributes, ReactNode } from "react";
+import type { ButtonHTMLAttributes } from "react";
 import { Link, type LinkProps as ReactRouterLinkProps } from "react-router";
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 type LinkProps = ReactRouterLinkProps;
 
-type Props = (ButtonProps | LinkProps) & {
+type Props<T extends ButtonProps | LinkProps> = T & {
   asChild?: boolean;
-  children: ReactNode;
 };
 
-export const Button = ({ asChild, children, ...props }: Props) => {
+export const Button = <T extends ButtonProps | LinkProps>({
+  asChild,
+  children,
+  ...props
+}: Props<T>) => {
   const Comp = asChild ? Slot.Root : "to" in props ? Link : "button";
 
   return (

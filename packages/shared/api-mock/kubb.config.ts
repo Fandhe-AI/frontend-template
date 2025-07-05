@@ -24,6 +24,11 @@ export default defineConfig({
     pluginFaker(fakerConfig as Parameters<typeof pluginFaker>[0]),
     pluginMsw({
       ...(mswConfig as Parameters<typeof pluginMsw>[0]),
+      output: {
+        ...(mswConfig as Parameters<typeof pluginMsw>[0])?.output,
+        path: "handlers",
+        banner: "// @ts-nocheck",
+      },
       baseURL: process.env.MOCK_API_BASE_URL,
     }),
   ],

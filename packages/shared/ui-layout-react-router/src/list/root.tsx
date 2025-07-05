@@ -1,7 +1,7 @@
 import * as Slot from "@radix-ui/react-slot";
 import type { HTMLAttributes, ReactNode } from "react";
 
-type Props<T> = HTMLAttributes<HTMLUListElement> & {
+type Props<T> = Omit<HTMLAttributes<HTMLUListElement>, "children"> & {
   asChild?: boolean;
   data: T[];
   empty?: ReactNode;

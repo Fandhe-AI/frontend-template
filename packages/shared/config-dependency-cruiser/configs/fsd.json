@@ -1,19 +1,7 @@
 {
   "forbidden": [
     {
-      "name": "fsd-same-layer-to-same-layer",
-      "severity": "error",
-      "comment": "同じ層同士の依存を禁止（Feature-Sliced Design）",
-      "from": {
-        "path": "^packages/(pages|widgets|features|entities)"
-      },
-      "to": {
-        "path": "^packages/(pages|widgets|features|entities)",
-        "pathNot": "^packages/$1"
-      }
-    },
-    {
-      "name": "fsd-widgets-to-pages",
+      "name": "fsd-widgets-to-upper-layer",
       "severity": "error",
       "comment": "Widgets層からPages層への依存を禁止（Feature-Sliced Design）",
       "from": {
@@ -24,7 +12,18 @@
       }
     },
     {
-      "name": "fsd-features-to-pages-widgets",
+      "name": "fsd-widgets-to-widgets",
+      "severity": "error",
+      "comment": "Widgets層から異なるパッケージへの依存を禁止（Feature-Sliced Design）",
+      "from": {
+        "path": "^packages/widgets/([^/]+)"
+      },
+      "to": {
+        "path": "^packages/widgets/(?!$1/)"
+      }
+    },
+    {
+      "name": "fsd-features-to-upper-layers",
       "severity": "error",
       "comment": "Features層からPages・Widgets層への依存を禁止（Feature-Sliced Design）",
       "from": {
@@ -32,6 +31,17 @@
       },
       "to": {
         "path": "^packages/(pages|widgets)"
+      }
+    },
+    {
+      "name": "fsd-features-to-features",
+      "severity": "error",
+      "comment": "Features層から異なるパッケージへの依存を禁止（Feature-Sliced Design）",
+      "from": {
+        "path": "^packages/features/([^/]+)"
+      },
+      "to": {
+        "path": "^packages/features/(?!$1/)"
       }
     },
     {
@@ -43,6 +53,17 @@
       },
       "to": {
         "path": "^packages/(pages|widgets|features)"
+      }
+    },
+    {
+      "name": "fsd-entities-to-entities",
+      "severity": "error",
+      "comment": "Entities層から異なるパッケージへの依存を禁止（Feature-Sliced Design）",
+      "from": {
+        "path": "^packages/entities/([^/]+)"
+      },
+      "to": {
+        "path": "^packages/entities/(?!$1/)"
       }
     },
     {

@@ -1,9 +1,8 @@
 import * as Slot from "@radix-ui/react-slot";
-import type { HTMLAttributes, ReactNode } from "react";
+import type { HTMLAttributes } from "react";
 
 type Props = HTMLAttributes<HTMLLIElement> & {
   asChild?: boolean;
-  children: ReactNode;
 };
 
 export const Item = ({ asChild, children, ...props }: Props) => {
