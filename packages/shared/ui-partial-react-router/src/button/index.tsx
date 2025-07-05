@@ -10,11 +10,11 @@ type Props = ButtonHTMLAttributes<HTMLButtonElement> &
 type ButtonVariants = VariantProps<typeof button>;
 
 const button = tv({
-  base: "font-medium bg-blue-500 text-white rounded-full active:opacity-80",
+  base: "font-medium rounded-full active:opacity-80",
   variants: {
     color: {
-      primary: "bg-blue-500 text-white",
-      secondary: "bg-purple-500 text-white",
+      primary: "bg-primary text-white",
+      accent: "bg-accent text-white",
     },
     size: {
       sm: "text-sm",

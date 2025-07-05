@@ -1,14 +1,7 @@
-/**
- * ユーティリティスタイルの定義
- * 再利用可能なスタイルユーティリティを定義
- */
-
-/** グリッドエリアのテンプレート定義 */
 @utility grid-areas-* {
-  grid-template-areas: --value([*]);
+  grid-template-areas: --value([\*]);
 }
 
-/** グリッドエリアの配置 */
 @utility grid-area-* {
-  grid-area: --value([*]);
+  grid-area: --value([\*]);
 }

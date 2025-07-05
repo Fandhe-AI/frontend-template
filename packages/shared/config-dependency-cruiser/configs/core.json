@@ -25,14 +25,18 @@
           "(^|/)(README|readme)\\.(md|txt)$",
           "(^|/)\\.(gitignore|npmignore|eslintrc|prettierrc)",
           "(^|/)turbo\\.json$",
-          "(^|/)next\\.config\\.(js|ts)$",
           "(^|/).next",
+          "(^|/)commitlint\\.config\\.(js|ts)$",
+          "(^|/)next\\.config\\.(js|ts)$",
           "(^|/)jest\\.config\\.(js|ts)$",
+          "(^|/)vite\\.config\\.(js|ts)$",
           "(^|/)vitest\\.config\\.(js|ts)$",
           "(^|/)playwright\\.config\\.(js|ts)$",
+          "(^|/)postcss\\.config\\.(js|ts)$",
 
-          "^apps/sample-nextjs/postcss.config.ts$",
-          "^apps/sample-react-router/src/routes/.+\\.tsx$"
+          "^apps/sample-react-router/src/routes/.+\\.tsx$",
+          "^apps/mock",
+          "^packages/shared/config-commitlint/configs/.+\\.js$"
         ]
       },
       "to": {}
