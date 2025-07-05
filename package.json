@@ -10,9 +10,9 @@
     "@repo/shared-config-dependency-cruiser": "workspace:*",
     "@repo/shared-config-syncpack": "workspace:*",
     "@repo/shared-config-typescript": "workspace:*",
-    "dependency-cruiser": "16.10.3",
-    "lefthook": "1.11.14",
-    "syncpack": "14.0.0-alpha.17",
+    "dependency-cruiser": "16.10.4",
+    "lefthook": "1.11.16",
+    "syncpack": "14.0.0-alpha.18",
     "tsx": "4.20.3",
     "turbo": "2.5.4"
   },

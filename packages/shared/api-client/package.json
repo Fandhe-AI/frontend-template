@@ -3,15 +3,15 @@
   "description": "API client for the project",
   "version": "0.0.0",
   "dependencies": {
-    "zod": "3.25.67"
+    "zod": "3.25.74"
   },
   "devDependencies": {
-    "@kubb/cli": "3.13.1",
-    "@kubb/core": "3.13.1",
-    "@kubb/plugin-client": "3.13.1",
-    "@kubb/plugin-oas": "3.13.1",
-    "@kubb/plugin-ts": "3.13.1",
-    "@kubb/plugin-zod": "3.13.1",
+    "@kubb/cli": "3.14.0",
+    "@kubb/core": "3.14.0",
+    "@kubb/plugin-client": "3.14.0",
+    "@kubb/plugin-oas": "3.14.0",
+    "@kubb/plugin-ts": "3.14.0",
+    "@kubb/plugin-zod": "3.14.0",
     "@repo/shared-api-spec": "workspace:*",
     "@repo/shared-config-kubb": "workspace:*",
     "@repo/shared-config-typescript": "workspace:*"

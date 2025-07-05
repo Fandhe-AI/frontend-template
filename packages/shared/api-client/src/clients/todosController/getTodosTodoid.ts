@@ -2,7 +2,7 @@ import type {
   RequestConfig,
   ResponseErrorConfig,
 } from "@kubb/plugin-client/clients/fetch";
-import client from "@kubb/plugin-client/clients/fetch";
+import fetch from "@kubb/plugin-client/clients/fetch";
 
 import type {
   GetTodosTodoid401,
@@ -24,9 +24,9 @@ function getGetTodosTodoidUrl(todoId: GetTodosTodoidPathParams["todoId"]) {
  */
 export async function getTodosTodoid(
   todoId: GetTodosTodoidPathParams["todoId"],
-  config: Partial<RequestConfig> & { client?: typeof client } = {},
+  config: Partial<RequestConfig> & { client?: typeof fetch } = {},
 ) {
-  const { client: request = client, ...requestConfig } = config;
+  const { client: request = fetch, ...requestConfig } = config;
 
   const res = await request<
     GetTodosTodoidQueryResponse,

@@ -9,9 +9,11 @@
   ],
   "cSpell.words": [
     "autodocs",
+    "biomejs",
     "commitlint",
     "cursorignore",
     "depcruise",
+    "dotenv",
     "Instantiator",
     "isbot",
     "kubb",
@@ -24,6 +26,7 @@
     "Todoid",
     "Turbopack",
     "Turborepo",
+    "vitest",
     "xlarge"
   ]
 }

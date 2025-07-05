@@ -2,7 +2,7 @@ import type {
   RequestConfig,
   ResponseErrorConfig,
 } from "@kubb/plugin-client/clients/fetch";
-import client from "@kubb/plugin-client/clients/fetch";
+import fetch from "@kubb/plugin-client/clients/fetch";
 
 import type {
   PostCategories400,
@@ -29,10 +29,10 @@ function getPostCategoriesUrl() {
 export async function postCategories(
   data: PostCategoriesMutationRequest,
   config: Partial<RequestConfig<PostCategoriesMutationRequest>> & {
-    client?: typeof client;
+    client?: typeof fetch;
   } = {},
 ) {
-  const { client: request = client, ...requestConfig } = config;
+  const { client: request = fetch, ...requestConfig } = config;
 
   const requestData = postCategoriesMutationRequestSchema.parse(data);
   const res = await request<

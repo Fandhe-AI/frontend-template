@@ -2,7 +2,7 @@ import type {
   RequestConfig,
   ResponseErrorConfig,
 } from "@kubb/plugin-client/clients/fetch";
-import client from "@kubb/plugin-client/clients/fetch";
+import fetch from "@kubb/plugin-client/clients/fetch";
 
 import type {
   PutTodosTodoid400,
@@ -32,10 +32,10 @@ export async function putTodosTodoid(
   todoId: PutTodosTodoidPathParams["todoId"],
   data?: PutTodosTodoidMutationRequest,
   config: Partial<RequestConfig<PutTodosTodoidMutationRequest>> & {
-    client?: typeof client;
+    client?: typeof fetch;
   } = {},
 ) {
-  const { client: request = client, ...requestConfig } = config;
+  const { client: request = fetch, ...requestConfig } = config;
 
   const requestData = putTodosTodoidMutationRequestSchema.parse(data);
   const res = await request<

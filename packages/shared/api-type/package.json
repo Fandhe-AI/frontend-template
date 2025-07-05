@@ -3,10 +3,10 @@
   "description": "API type for the project",
   "version": "0.0.0",
   "devDependencies": {
-    "@kubb/cli": "3.13.1",
-    "@kubb/core": "3.13.1",
-    "@kubb/plugin-oas": "3.13.1",
-    "@kubb/plugin-ts": "3.13.1",
+    "@kubb/cli": "3.14.0",
+    "@kubb/core": "3.14.0",
+    "@kubb/plugin-oas": "3.14.0",
+    "@kubb/plugin-ts": "3.14.0",
     "@repo/shared-api-spec": "workspace:*",
     "@repo/shared-config-kubb": "workspace:*",
     "@repo/shared-config-typescript": "workspace:*"

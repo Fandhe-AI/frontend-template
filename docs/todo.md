@@ -43,9 +43,9 @@
 
 ### 低優先度
 
-- [ ] **Storybook導入**
-  - [ ] apps/storybook アプリケーション作成
-  - [ ] 既存UIコンポーネントのStory作成
+- [x] **Storybook導入**
+  - [x] apps/storybook アプリケーション作成
+  - [x] 既存UIコンポーネントのStory作成
   - [ ] デザインシステムドキュメント化
 
 - [ ] **Vitest導入**

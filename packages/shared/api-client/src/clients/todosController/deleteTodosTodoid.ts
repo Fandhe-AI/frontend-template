@@ -2,7 +2,7 @@ import type {
   RequestConfig,
   ResponseErrorConfig,
 } from "@kubb/plugin-client/clients/fetch";
-import client from "@kubb/plugin-client/clients/fetch";
+import fetch from "@kubb/plugin-client/clients/fetch";
 
 import type {
   DeleteTodosTodoid401,
@@ -26,9 +26,9 @@ function getDeleteTodosTodoidUrl(
  */
 export async function deleteTodosTodoid(
   todoId: DeleteTodosTodoidPathParams["todoId"],
-  config: Partial<RequestConfig> & { client?: typeof client } = {},
+  config: Partial<RequestConfig> & { client?: typeof fetch } = {},
 ) {
-  const { client: request = client, ...requestConfig } = config;
+  const { client: request = fetch, ...requestConfig } = config;
 
   const res = await request<
     DeleteTodosTodoidMutationResponse,

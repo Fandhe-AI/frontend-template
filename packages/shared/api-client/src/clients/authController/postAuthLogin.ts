@@ -2,7 +2,7 @@ import type {
   RequestConfig,
   ResponseErrorConfig,
 } from "@kubb/plugin-client/clients/fetch";
-import client from "@kubb/plugin-client/clients/fetch";
+import fetch from "@kubb/plugin-client/clients/fetch";
 
 import type {
   PostAuthLogin400,
@@ -28,10 +28,10 @@ function getPostAuthLoginUrl() {
 export async function postAuthLogin(
   data: PostAuthLoginMutationRequest,
   config: Partial<RequestConfig<PostAuthLoginMutationRequest>> & {
-    client?: typeof client;
+    client?: typeof fetch;
   } = {},
 ) {
-  const { client: request = client, ...requestConfig } = config;
+  const { client: request = fetch, ...requestConfig } = config;
 
   const requestData = postAuthLoginMutationRequestSchema.parse(data);
   const res = await request<
