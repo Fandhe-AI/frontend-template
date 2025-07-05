@@ -3,8 +3,8 @@ import type { ComponentPropsWithRef, HTMLAttributes } from "react";
 
 import { Button } from "../button";
 
-type DivProps = HTMLAttributes<HTMLDivElement>;
-type ButtonProps = ComponentPropsWithRef<typeof Button>;
+export type DivProps = HTMLAttributes<HTMLDivElement>;
+export type ButtonProps = ComponentPropsWithRef<typeof Button>;
 
 type Props<T extends ButtonProps | DivProps> = T & {
   asChild?: boolean;

@@ -48,6 +48,13 @@
       "dependsOn": ["^generate"],
       "inputs": ["$TURBO_DEFAULT$", ".env.example", ".env"],
       "outputs": ["src/**"]
+    },
+    "storybook:build": {
+      "dependsOn": ["^storybook:build"]
+    },
+    "storybook:dev": {
+      "cache": false,
+      "persistent": true
     }
   }
 }

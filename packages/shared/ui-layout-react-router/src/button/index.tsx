@@ -2,8 +2,8 @@ import * as Slot from "@radix-ui/react-slot";
 import type { ButtonHTMLAttributes } from "react";
 import { Link, type LinkProps as ReactRouterLinkProps } from "react-router";
 
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
-type LinkProps = ReactRouterLinkProps;
+export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+export type LinkProps = ReactRouterLinkProps;
 
 type Props<T extends ButtonProps | LinkProps> = T & {
   asChild?: boolean;

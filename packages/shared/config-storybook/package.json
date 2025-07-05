@@ -1,0 +1,22 @@
+{
+  "name": "@repo/shared-config-storybook",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@repo/shared-config-typescript": "workspace:*",
+    "@storybook/addon-a11y": "9.0.15",
+    "@storybook/addon-docs": "9.0.15",
+    "@storybook/addon-vitest": "9.0.15",
+    "@storybook/react-vite": "9.0.15",
+    "storybook": "9.0.15",
+    "storybook-addon-remix-react-router": "5.0.0",
+    "typescript": "5"
+  },
+  "exports": {
+    "./configs/*": "./configs/*.ts"
+  },
+  "private": true,
+  "scripts": {
+    "check:types": "tsc --noEmit"
+  }
+}

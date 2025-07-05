@@ -50,7 +50,9 @@
     "package:lint": "syncpack lint",
     "package:list": "syncpack list",
     "package:update": "syncpack update",
-    "package:update:check": "turbo run package:update -- --check"
+    "package:update:check": "turbo run package:update -- --check",
+    "storybook:build": "turbo run storybook:build",
+    "storybook:dev": "turbo run storybook:dev"
   },
   "type": "module",
   "volta": {

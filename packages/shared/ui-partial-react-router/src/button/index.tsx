@@ -1,8 +1,15 @@
 import * as Slot from "@radix-ui/react-slot";
-import type { ButtonHTMLAttributes } from "react";
+import {
+  type ButtonProps,
+  Button as LayoutButton,
+  type LinkProps,
+} from "@repo/shared-ui-layout-react-router";
+import type { ComponentPropsWithRef } from "react";
 import { tv, type VariantProps } from "tailwind-variants";
 
-type Props = ButtonHTMLAttributes<HTMLButtonElement> &
+type Props<T extends ButtonProps | LinkProps> = ComponentPropsWithRef<
+  typeof LayoutButton<T>
+> &
   ButtonVariants & {
     asChild?: boolean;
   };
@@ -34,17 +41,18 @@ const button = tv({
   },
 });
 
-export const Button = ({
+export const Button = <T extends ButtonProps | LinkProps>({
   asChild,
   size,
   color,
   children,
   className,
   ...props
-}: Props) => {
-  const Comp = asChild ? Slot.Root : "button";
+}: Props<T>) => {
+  const Comp = asChild ? Slot.Root : LayoutButton;
 
   return (
+    // @ts-expect-error: TODO: fix this
     <Comp className={button({ className, size, color })} {...props}>
       <Slot.Slottable>{children}</Slot.Slottable>
     </Comp>
