@@ -3,6 +3,30 @@
   "ui": "tui",
   "globalDependencies": ["**/.env.*local"],
   "tasks": {
+    "//#check:dep": {
+      "inputs": [
+        "**/*.{ts,tsx,js,jsx}",
+        "package.json",
+        ".dependency-cruiser.js"
+      ],
+      "outputs": []
+    },
+    "//#commit": {},
+    "//#check:dep:graph": {
+      "inputs": [
+        "**/*.{ts,tsx,js,jsx}",
+        "package.json",
+        ".dependency-cruiser.js"
+      ],
+      "outputs": ["dependency-graph.*"]
+    },
+    "//#format": {},
+    "//#lint": {},
+    "//#package:fix": {},
+    "//#package:format": {},
+    "//#package:lint": {},
+    "//#package:list": {},
+    "//#package:update": {},
     "build": {
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
@@ -13,6 +37,9 @@
         "dist/**"
       ]
     },
+    "check:types": {
+      "dependsOn": ["^check:types"]
+    },
     "dev": {
       "cache": false,
       "persistent": true
@@ -21,28 +48,6 @@
       "dependsOn": ["^generate"],
       "inputs": ["$TURBO_DEFAULT$", ".env.example", ".env"],
       "outputs": ["src/**"]
-    },
-    "lint": {},
-    "lint:fix": {},
-    "format": {},
-    "check:types": {
-      "dependsOn": ["^check:types"]
-    },
-    "check:dep": {
-      "inputs": [
-        "**/*.{ts,tsx,js,jsx}",
-        "package.json",
-        ".dependency-cruiser.js"
-      ],
-      "outputs": []
-    },
-    "check:dep:graph": {
-      "inputs": [
-        "**/*.{ts,tsx,js,jsx}",
-        "package.json",
-        ".dependency-cruiser.js"
-      ],
-      "outputs": ["dependency-graph.*"]
     }
   }
 }
