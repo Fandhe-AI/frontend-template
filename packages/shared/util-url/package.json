@@ -1,0 +1,25 @@
+{
+  "name": "@repo/shared-util-url",
+  "description": "URL utilities for the project",
+  "version": "0.0.0",
+  "dependencies": {
+    "@repo/shared-config-typescript": "workspace:*",
+    "@repo/shared-config-vitest": "workspace:*",
+    "@repo/shared-constant": "workspace:*",
+    "@vitest/coverage-v8": "3.2.4",
+    "typescript": "5",
+    "vite": "7.0.2",
+    "vitest": "3.2.4"
+  },
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "private": true,
+  "scripts": {
+    "check:types": "tsc --noEmit",
+    "test": "vitest",
+    "test:bench": "pnpm run test bench",
+    "test:dev": "pnpm run test --watch",
+    "test:run": "pnpm run test --run"
+  }
+}

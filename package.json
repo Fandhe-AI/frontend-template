@@ -52,7 +52,15 @@
     "package:update": "syncpack update",
     "package:update:check": "turbo run package:update -- --check",
     "storybook:build": "turbo run storybook:build",
-    "storybook:dev": "turbo run storybook:dev"
+    "storybook:dev": "turbo run storybook:dev",
+    "test": "turbo run test -- --run",
+    "test:bench": "turbo run test:bench -- --run",
+    "test:bench:change": "turbo run test:bench -- --run --changed",
+    "test:bench:dev": "turbo run test:bench -- --watch",
+    "test:change": "turbo run test -- --run --changed",
+    "test:coverage": "turbo run test -- --run --coverage",
+    "test:coverage:change": "turbo run test -- --run --coverage --changed",
+    "test:dev": "turbo run test -- --watch"
   },
   "type": "module",
   "volta": {

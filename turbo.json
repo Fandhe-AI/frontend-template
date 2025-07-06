@@ -55,6 +55,20 @@
     "storybook:dev": {
       "cache": false,
       "persistent": true
+    },
+    "test": {
+      "dependsOn": ["^test"]
+    },
+    "test:bench": {
+      "dependsOn": ["^test:bench"]
+    },
+    "test:bench:dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "test:dev": {
+      "cache": false,
+      "persistent": true
     }
   }
 }

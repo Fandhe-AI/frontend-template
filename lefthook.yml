@@ -5,6 +5,8 @@ pre-commit:
       run: pnpm run check:types
     check:dep:
       run: pnpm run check:dep
+    test:change:
+      run: pnpm run test:change
     lint:
       run: pnpm run lint
       stage_fixed: true

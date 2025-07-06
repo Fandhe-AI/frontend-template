@@ -1,0 +1,12 @@
+{
+  "name": "@repo/shared-constant",
+  "description": "Constants for the project",
+  "version": "0.0.0",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "private": true,
+  "scripts": {
+    "check:types": "tsc --noEmit"
+  }
+}
